@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progettopcto\\progettopcto.csproj": {}
+    "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progettopcto\\progettopcto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progettopcto\\progettopcto.csproj": {
+    "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progettopcto\\progettopcto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progettopcto\\progettopcto.csproj",
+        "projectUniqueName": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progettopcto\\progettopcto.csproj",
         "projectName": "progettopcto",
-        "projectPath": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progettopcto\\progettopcto.csproj",
-        "packagesPath": "C:\\Users\\PCTO2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progettopcto\\obj\\",
+        "projectPath": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progettopcto\\progettopcto.csproj",
+        "packagesPath": "C:\\Users\\AdminPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progettopcto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PCTO2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AdminPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
