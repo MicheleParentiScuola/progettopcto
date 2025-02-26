@@ -84,5 +84,29 @@ namespace progetto.Controllers
             _ctx.SaveChanges();
             return NoContent();
         }
+
+        [HttpGet("search")]
+        public IActionResult Search([FromQuery] string title, [FromQuery] string author, [FromQuery] string genre)
+        {
+            var query = _ctx.Books.AsQueryable();
+
+            if (!string.IsNullOrEmpty(title))
+            {
+                query = query.Where(b => b.Title.Contains(title));
+            }
+
+            if (!string.IsNullOrEmpty(author))
+            {
+                query = query.Where(b => b.AuthorCF.Contains(author));
+            }
+
+            if (!string.IsNullOrEmpty(genre))
+            {
+                query = query.Where(b => b.Genre.Contains(genre));
+            }
+
+            var result = query.ToList().ConvertAll(_mapper.MapEntityToDto);
+            return Ok(result);
+        }
     }
 }

@@ -10,9 +10,9 @@ namespace progettopcto.Migrations
                 name: "Authors",
                 columns: table => new
                 {
-                    CF = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CF = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Name = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Surname = table.Column<string>(type: "varchar50)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -23,10 +23,10 @@ namespace progettopcto.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    CF = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CF = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Name = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Surname = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Address = table.Column<string>(type: "varchar(50)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -39,9 +39,9 @@ namespace progettopcto.Migrations
                 {
                     ISBN = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Genre = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AuthorCF = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    Title = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Genre = table.Column<string>(type: "varchar(50)", nullable: false),
+                    AuthorCF = table.Column<string>(type: "varchar(50)", nullable: false)
                 },
                 constraints: table =>
                 {
