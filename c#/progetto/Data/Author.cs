@@ -14,6 +14,7 @@ namespace progettopcto.Data
         public string CF { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
+        public List<Book>? Books { get; set; }
 
     }
 }

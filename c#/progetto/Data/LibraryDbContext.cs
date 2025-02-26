@@ -9,13 +9,12 @@ namespace progettopcto.Data
 {
     class LibraryDbContext : DbContext
     {
-        public LibraryDbContext(DbContextOptions options) : base(options)
+        public LibraryDbContext(DbContextOptions<LibraryDbContext> options) : base(options)
         {
         }
 
-        protected LibraryDbContext()
-        {
-        }
+        protected LibraryDbContext() : base() { }
+        
         public DbSet<User> Users { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Book> Books { get; set; }

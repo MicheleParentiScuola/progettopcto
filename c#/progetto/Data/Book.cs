@@ -19,8 +19,7 @@ namespace progettopcto.Data
 
         [ForeignKey(nameof(AuthorCF))]
         public Author? Author { get; set; }
-
-
+        public List<Loan>? Loans { get; set; }
 
     }
 }

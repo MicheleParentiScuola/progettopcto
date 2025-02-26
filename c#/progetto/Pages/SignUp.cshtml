@@ -4,21 +4,16 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h2 class="display-4">Login</h2>
-    <div class="form-container">
-        <div class="form" id="loginForm">
-            
-            <form class="login">
-                <input type="email" placeholder="Email" id="email" name="email" required>
-                <input type="password" placeholder="Password" id="password" name="password" required>
-                <button type="submit">Sign in</button>  
-            </form>
-            <p>Don't have an account? <span onclick="toggleForms()">register here</span></p>
-            
-        </div>
-        
 
-    
-</div>
+
+
+<div class="form">
+    <h2>Login</h2>
+    <form class="login">
+        <input type="email" placeholder="Email" id="email" name="email" required>
+        <input type="password" placeholder="Password" id="password" name="password" required>
+        <button type="submit">Sign up</button>
+    </form>
+    <p>Don't have an account? &nbsp;<a asp-area="" asp-page="/SignIn" class="signin-link">Register here</a></p>
+
 </div>
