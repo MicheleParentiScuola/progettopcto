@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eMfBmnBE9RY67KxGvEyARmfP2Ux2Xd16dYfOUfrmu58=",
+  "Hash": "sWPepofiT6A9Ed7Yq7zg4HU4Uag1YHbpJUtCn04VEFs=",
   "Source": "progetto",
   "BasePath": "_content/progetto",
   "Mode": "Default",
@@ -1046,12 +1046,12 @@
       "OriginalItemSpec": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-b9sayid5wm.gz",
+      "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-687epga28r.gz",
       "SourceId": "progetto",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/progetto",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=687epga28r}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1060,8 +1060,8 @@
       "RelatedAsset": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wf4wcyqcqt",
-      "Integrity": "fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=",
+      "Fingerprint": "9vi6prhx71",
+      "Integrity": "BfrlyktFdkMO8HgMu9cXPhcdg2nAkx5TYJIOldy0SHE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css"
@@ -1193,12 +1193,12 @@
       "OriginalItemSpec": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-xtxxf3hu2r.gz",
+      "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-ltrnr4vhrt.gz",
       "SourceId": "progetto",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/progetto",
-      "RelativePath": "js/site#[.{fingerprint=xtxxf3hu2r}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=ltrnr4vhrt}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1207,8 +1207,8 @@
       "RelatedAsset": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fpxp8wntf7",
-      "Integrity": "465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=",
+      "Fingerprint": "octs2k8uy1",
+      "Integrity": "aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "687epga28r",
+      "Integrity": "6sozkB8+ADPkO053G4cF0JLyGgJ3D+K5Q45FfKRZo60=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
+      "Fingerprint": "ltrnr4vhrt",
+      "Integrity": "macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -2728,13 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-b9sayid5wm.gz",
+      "Route": "css/site.687epga28r.css",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-687epga28r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003125000000"
+          "Quality": "0.001095290252"
         }
       ],
       "ResponseHeaders": [
@@ -2744,15 +2744,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "912"
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"BfrlyktFdkMO8HgMu9cXPhcdg2nAkx5TYJIOldy0SHE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 13:14:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2772,13 +2772,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"6sozkB8+ADPkO053G4cF0JLyGgJ3D+K5Q45FfKRZo60=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "687epga28r"
         },
         {
           "Name": "label",
@@ -2786,12 +2786,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-6sozkB8+ADPkO053G4cF0JLyGgJ3D+K5Q45FfKRZo60="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.687epga28r.css",
       "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2801,7 +2801,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "2357"
         },
         {
           "Name": "Content-Type",
@@ -2809,11 +2809,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"6sozkB8+ADPkO053G4cF0JLyGgJ3D+K5Q45FfKRZo60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 13:14:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2823,7 +2823,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "687epga28r"
         },
         {
           "Name": "label",
@@ -2831,13 +2831,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-6sozkB8+ADPkO053G4cF0JLyGgJ3D+K5Q45FfKRZo60="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-b9sayid5wm.gz",
+      "Route": "css/site.687epga28r.css.gz",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-687epga28r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2846,7 +2846,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "912"
         },
         {
           "Name": "Content-Type",
@@ -2854,11 +2854,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"BfrlyktFdkMO8HgMu9cXPhcdg2nAkx5TYJIOldy0SHE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 13:14:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2876,7 +2876,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "687epga28r"
         },
         {
           "Name": "label",
@@ -2884,18 +2884,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+          "Value": "sha256-BfrlyktFdkMO8HgMu9cXPhcdg2nAkx5TYJIOldy0SHE="
         }
       ]
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-b9sayid5wm.gz",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-687epga28r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003125000000"
+          "Quality": "0.001095290252"
         }
       ],
       "ResponseHeaders": [
@@ -2905,15 +2905,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "912"
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"BfrlyktFdkMO8HgMu9cXPhcdg2nAkx5TYJIOldy0SHE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 13:14:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2933,13 +2933,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"6sozkB8+ADPkO053G4cF0JLyGgJ3D+K5Q45FfKRZo60=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-6sozkB8+ADPkO053G4cF0JLyGgJ3D+K5Q45FfKRZo60="
         }
       ]
     },
@@ -2954,7 +2954,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "2357"
         },
         {
           "Name": "Content-Type",
@@ -2962,11 +2962,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"6sozkB8+ADPkO053G4cF0JLyGgJ3D+K5Q45FfKRZo60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 13:14:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2976,13 +2976,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-6sozkB8+ADPkO053G4cF0JLyGgJ3D+K5Q45FfKRZo60="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-b9sayid5wm.gz",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-687epga28r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2991,7 +2991,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "912"
         },
         {
           "Name": "Content-Type",
@@ -2999,11 +2999,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"BfrlyktFdkMO8HgMu9cXPhcdg2nAkx5TYJIOldy0SHE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 13:14:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3021,7 +3021,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+          "Value": "sha256-BfrlyktFdkMO8HgMu9cXPhcdg2nAkx5TYJIOldy0SHE="
         }
       ]
     },
@@ -3325,12 +3325,12 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-xtxxf3hu2r.gz",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-ltrnr4vhrt.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005235602094"
+          "Quality": "0.001488095238"
         }
       ],
       "ResponseHeaders": [
@@ -3340,15 +3340,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "671"
         },
         {
           "Name": "ETag",
-          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
+          "Value": "\"aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 10:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3368,13 +3368,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "W/\"macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ="
         }
       ]
     },
@@ -3389,7 +3389,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "1678"
         },
         {
           "Name": "Content-Type",
@@ -3397,11 +3397,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 10:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3411,13 +3411,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ="
         }
       ]
     },
     {
       "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-xtxxf3hu2r.gz",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-ltrnr4vhrt.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3426,7 +3426,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "671"
         },
         {
           "Name": "Content-Type",
@@ -3434,11 +3434,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
+          "Value": "\"aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 10:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3456,18 +3456,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA="
+          "Value": "sha256-aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-xtxxf3hu2r.gz",
+      "Route": "js/site.ltrnr4vhrt.js",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-ltrnr4vhrt.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005235602094"
+          "Quality": "0.001488095238"
         }
       ],
       "ResponseHeaders": [
@@ -3477,15 +3477,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "671"
         },
         {
           "Name": "ETag",
-          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
+          "Value": "\"aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 10:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3505,13 +3505,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "W/\"macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "ltrnr4vhrt"
         },
         {
           "Name": "label",
@@ -3519,12 +3519,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js",
+      "Route": "js/site.ltrnr4vhrt.js",
       "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3534,7 +3534,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "1678"
         },
         {
           "Name": "Content-Type",
@@ -3542,11 +3542,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 10:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3556,7 +3556,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "ltrnr4vhrt"
         },
         {
           "Name": "label",
@@ -3564,13 +3564,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js.gz",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-xtxxf3hu2r.gz",
+      "Route": "js/site.ltrnr4vhrt.js.gz",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-ltrnr4vhrt.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3579,7 +3579,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "671"
         },
         {
           "Name": "Content-Type",
@@ -3587,11 +3587,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
+          "Value": "\"aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 08:40:07 GMT"
+          "Value": "Wed, 26 Feb 2025 10:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3609,7 +3609,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "ltrnr4vhrt"
         },
         {
           "Name": "label",
@@ -3617,7 +3617,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA="
+          "Value": "sha256-aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4="
         }
       ]
     },
