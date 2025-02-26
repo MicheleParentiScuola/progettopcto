@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("progettopcto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d618aad43ce7ffcd0d6380489f473b161311d183")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36684f2f5a8988749b05c4ef8016903eef1e0634")]
 [assembly: System.Reflection.AssemblyProductAttribute("progettopcto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("progettopcto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
