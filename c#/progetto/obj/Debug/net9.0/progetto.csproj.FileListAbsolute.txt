@@ -224,7 +224,6 @@ C:\Users\AdminPC\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\progetto.pdb
 C:\Users\AdminPC\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\progetto.genruntimeconfig.cache
 C:\Users\AdminPC\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\ref\progetto.dll
 C:\Users\AdminPC\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\u18761l8ay-ltrnr4vhrt.gz
-C:\Users\AdminPC\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\pd7f92sirr-687epga28r.gz
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\bin\Debug\net9.0\appsettings.json
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\bin\Debug\net9.0\progetto.staticwebassets.runtime.json
@@ -452,3 +451,4 @@ C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\progetto.pdb
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\progetto.genruntimeconfig.cache
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\ref\progetto.dll
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\pd7f92sirr-0rcxa1x9th.gz
+C:\Users\AdminPC\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\pd7f92sirr-xcp7wbwusn.gz

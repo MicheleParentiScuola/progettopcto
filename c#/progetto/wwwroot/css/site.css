@@ -1,6 +1,4 @@
-html {
-    font-size: 14px;
-}
+
 
 @media (min-width: 768px) {
     html {
@@ -15,6 +13,7 @@ html {
 html {
     position: relative;
     min-height: 100%;
+    font-size: 14px;
 }
 
 body {
@@ -100,3 +99,18 @@ button {
 p {
     text-align: center;
 }
+
+#title {  
+   font-weight: bold;  
+}
+
+.navbar {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;
+  background-color:blue;
+  border-bottom: 1px solid #e3e3e3;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+  margin-bottom: 1rem;  
+}
+    
