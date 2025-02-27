@@ -1,18 +1,23 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace progettopcto.Migrations
+#nullable disable
+
+namespace progetto.Migrations
 {
-    public partial class CreateDb : Migration
+    /// <inheritdoc />
+    public partial class InitialCreate : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
                 name: "Authors",
                 columns: table => new
                 {
-                    CF = table.Column<string>(type: "varchar(50)", nullable: false),
-                    Name = table.Column<string>(type: "varchar(50)", nullable: false),
-                    Surname = table.Column<string>(type: "varchar50)", nullable: false)
+                    CF = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -23,10 +28,11 @@ namespace progettopcto.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    CF = table.Column<string>(type: "varchar(50)", nullable: false),
-                    Name = table.Column<string>(type: "varchar(50)", nullable: false),
-                    Surname = table.Column<string>(type: "varchar(50)", nullable: false),
-                    Address = table.Column<string>(type: "varchar(50)", nullable: false)
+                    CF = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -39,9 +45,9 @@ namespace progettopcto.Migrations
                 {
                     ISBN = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "varchar(50)", nullable: false),
-                    Genre = table.Column<string>(type: "varchar(50)", nullable: false),
-                    AuthorCF = table.Column<string>(type: "varchar(50)", nullable: false)
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Genre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AuthorCF = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -98,6 +104,7 @@ namespace progettopcto.Migrations
                 column: "UserCF");
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

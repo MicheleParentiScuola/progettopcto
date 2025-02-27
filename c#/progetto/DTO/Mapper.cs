@@ -36,7 +36,8 @@ namespace progettopcto.DTO
                 ISBN = entity.ISBN,
                 Title = entity.Title,
                 Genre = entity.Genre,
-                AuthorCF = entity.AuthorCF
+                AuthorCF = entity.AuthorCF,
+
             };
         }
 
@@ -47,7 +48,8 @@ namespace progettopcto.DTO
                 ISBN = bookDto.ISBN,
                 Title = bookDto.Title,
                 Genre = bookDto.Genre,
-                AuthorCF = bookDto.AuthorCF
+                AuthorCF = bookDto.AuthorCF,
+
             };
         }
 
@@ -82,7 +84,8 @@ namespace progettopcto.DTO
                 CF = entity.CF,
                 Name = entity.Name,
                 Surname = entity.Surname,
-                Address = entity.Address
+                Address = entity.Address,
+                Password = entity.Password // Aggiunta della proprietà Password
             };
         }
 
@@ -93,7 +96,8 @@ namespace progettopcto.DTO
                 CF = userDto.CF,
                 Name = userDto.Name,
                 Surname = userDto.Surname,
-                Address = userDto.Address
+                Address = userDto.Address,
+                Password = userDto.Password // Aggiunta della proprietà Password
             };
         }
     }

@@ -13,9 +13,11 @@ namespace progettopcto.Data
     class Book
     {
         public int ISBN { get; set; }
-        public string Title { get; set; }
-        public string Genre { get; set; }
-        public string AuthorCF { get; set; }
+        public required string Title { get; set; }
+        public required string Genre { get; set; }
+        public required string AuthorCF { get; set; }
+
+
 
         [ForeignKey(nameof(AuthorCF))]
         public Author? Author { get; set; }

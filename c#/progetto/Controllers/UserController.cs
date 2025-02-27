@@ -67,6 +67,7 @@ namespace progetto.Controllers
             user.Name = userDto.Name;
             user.Surname = userDto.Surname;
             user.Address = userDto.Address;
+            user.Password = userDto.Password; // Aggiunta della gestione della password
             _ctx.Users.Update(user);
             _ctx.SaveChanges();
             return NoContent();

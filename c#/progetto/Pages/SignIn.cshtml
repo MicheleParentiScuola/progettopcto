@@ -7,12 +7,12 @@
 
 <div class="form_2">
     <h2>Registration</h2>
-    <form class="register">
-        <input type="text" placeholder="Nome" id="nome" name="nome" required>
-        <input type="text" placeholder="Cognome" id="cognome" name="cognome" required>
+    <form class="register" asp-page="/SignUp" method="post">
+        <input type="text" placeholder="Name" id="nome" name="nome" required>
+        <input type="text" placeholder="Surname" id="cognome" name="cognome" required>
         <input type="email" placeholder="Email" id="email_reg" name="email" required>
         <input type="password" placeholder="Password" id="password_reg" name="password" required>
-        <button type="submit">Sing in</button>
+        <button type="submit">Sign in</button>
     </form>
     <p>Do you have just account? <a asp-area="" asp-page="/SignUp" >Login here</a></p>
 </div>

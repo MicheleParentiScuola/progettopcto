@@ -11,9 +11,9 @@ namespace progettopcto.Data
     [PrimaryKey(nameof(CF))]
     class Author
     {
-        public string CF { get; set; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
+        public required string CF { get; set; }
+        public required string Name { get; set; }
+        public required string Surname { get; set; }
         public List<Book>? Books { get; set; }
 
     }

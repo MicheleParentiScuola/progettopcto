@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<LibraryDbContext>(options =>
 {
-    options.UseSqlServer("Server=localhost;Database=library;Integrated Security=True;TrustServerCertificate=True");
+    options.UseSqlServer("Server=localhost;Database=bookcase;Integrated Security=True;TrustServerCertificate=True");
 });
 
 builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
@@ -23,7 +23,7 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-DatabaseTest dt = new DatabaseTest("Server=localhost;Database=library;Integrated Security=True;TrustServerCertificate=True");
+DatabaseTest dt = new DatabaseTest("Server=localhost;Database=bookcase;Integrated Security=True;TrustServerCertificate=True");
 dt.TestConnection();
 
 // Configure the HTTP request pipeline.

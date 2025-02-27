@@ -8,9 +8,11 @@ namespace progettopcto.DTO
 {
     class UserDTO
     {
-        public string CF { get; set; }
+        public required string CF { get; set; }
         public required string Name { get; set; }
         public required string Surname { get; set; }
         public required string Address { get; set; }
+
+        public required string Password { get; set; } // Aggiunta della proprietà Password
     }
 }

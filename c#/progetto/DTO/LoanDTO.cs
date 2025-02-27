@@ -10,7 +10,7 @@ namespace progettopcto.DTO
     {
         public int Id { get; set; }
         public int BookISBN { get; set; }
-        public string UserCF { get; set; }
+        public required string UserCF { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
     }

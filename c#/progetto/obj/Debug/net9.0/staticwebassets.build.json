@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GxNncRZ35JZDMjL/6Ha1JWjOLSRUPO9AtQu4x9IQ+S8=",
+  "Hash": "WpL4gycXzAncXwHTq/PtVK154pDNoB02Lu7irpLoTIo=",
   "Source": "progetto",
   "BasePath": "_content/progetto",
   "Mode": "Default",
@@ -1046,12 +1046,12 @@
       "OriginalItemSpec": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-phk3iug3ys.gz",
+      "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-5l07svq29b.gz",
       "SourceId": "progetto",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/progetto",
-      "RelativePath": "css/site#[.{fingerprint=phk3iug3ys}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=5l07svq29b}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1060,8 +1060,8 @@
       "RelatedAsset": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9x8m7pkfl4",
-      "Integrity": "rUFFL5WDgucTQQt8qhJTSCAUvvHeIUswA/EGRunr01o=",
+      "Fingerprint": "ilm6tmym7d",
+      "Integrity": "5qwa/titnQlcCsyvm+oaywtWkjvv7yJi5xMqWd4lH5E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css"
@@ -1193,12 +1193,12 @@
       "OriginalItemSpec": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-ltrnr4vhrt.gz",
+      "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-3e3kbtbypl.gz",
       "SourceId": "progetto",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/progetto",
-      "RelativePath": "js/site#[.{fingerprint=ltrnr4vhrt}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=3e3kbtbypl}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1207,8 +1207,8 @@
       "RelatedAsset": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "octs2k8uy1",
-      "Integrity": "aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4=",
+      "Fingerprint": "8tuwdwm3if",
+      "Integrity": "BM8ylcfGucy6yFAPgkLkUrNQOwZT4K52sZX4F7X/2zw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "phk3iug3ys",
-      "Integrity": "fdQslVlunbk6SsDC0wfQ14DK8dXTCtfCCwC6/T6kOVw=",
+      "Fingerprint": "5l07svq29b",
+      "Integrity": "uZZVIzuzFZ4evf4HB3UyixHu8eZdAhWvzupNrAyrI/8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ltrnr4vhrt",
-      "Integrity": "macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ=",
+      "Fingerprint": "3e3kbtbypl",
+      "Integrity": "1QKMSoV3dDWrUFIpLz+xvzUl0d4bWNcViCowZYby+hU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -2728,13 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-phk3iug3ys.gz",
+      "Route": "css/site.5l07svq29b.css",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-5l07svq29b.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001011122346"
+          "Quality": "0.000984251969"
         }
       ],
       "ResponseHeaders": [
@@ -2744,19 +2744,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "988"
+          "Value": "1015"
         },
         {
           "Name": "ETag",
-          "Value": "\"rUFFL5WDgucTQQt8qhJTSCAUvvHeIUswA/EGRunr01o=\""
+          "Value": "\"5qwa/titnQlcCsyvm+oaywtWkjvv7yJi5xMqWd4lH5E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 09:12:34 GMT"
+          "Value": "Thu, 27 Feb 2025 09:45:23 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2772,18 +2772,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fdQslVlunbk6SsDC0wfQ14DK8dXTCtfCCwC6/T6kOVw=\""
+          "Value": "W/\"uZZVIzuzFZ4evf4HB3UyixHu8eZdAhWvzupNrAyrI/8=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "5l07svq29b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-fdQslVlunbk6SsDC0wfQ14DK8dXTCtfCCwC6/T6kOVw="
+          "Value": "sha256-uZZVIzuzFZ4evf4HB3UyixHu8eZdAhWvzupNrAyrI/8="
         }
       ]
     },
     {
-      "Route": "css/site.css",
+      "Route": "css/site.5l07svq29b.css",
       "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2793,7 +2801,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2622"
+          "Value": "2708"
         },
         {
           "Name": "Content-Type",
@@ -2801,121 +2809,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fdQslVlunbk6SsDC0wfQ14DK8dXTCtfCCwC6/T6kOVw=\""
+          "Value": "\"uZZVIzuzFZ4evf4HB3UyixHu8eZdAhWvzupNrAyrI/8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 09:12:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fdQslVlunbk6SsDC0wfQ14DK8dXTCtfCCwC6/T6kOVw="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-phk3iug3ys.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "988"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rUFFL5WDgucTQQt8qhJTSCAUvvHeIUswA/EGRunr01o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 09:12:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-rUFFL5WDgucTQQt8qhJTSCAUvvHeIUswA/EGRunr01o="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.phk3iug3ys.css",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-phk3iug3ys.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001011122346"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "988"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rUFFL5WDgucTQQt8qhJTSCAUvvHeIUswA/EGRunr01o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 09:12:34 GMT"
+          "Value": "Thu, 27 Feb 2025 09:45:23 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"fdQslVlunbk6SsDC0wfQ14DK8dXTCtfCCwC6/T6kOVw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "phk3iug3ys"
+          "Value": "5l07svq29b"
         },
         {
           "Name": "label",
@@ -2923,13 +2831,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fdQslVlunbk6SsDC0wfQ14DK8dXTCtfCCwC6/T6kOVw="
+          "Value": "sha256-uZZVIzuzFZ4evf4HB3UyixHu8eZdAhWvzupNrAyrI/8="
         }
       ]
     },
     {
-      "Route": "css/site.phk3iug3ys.css",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css",
+      "Route": "css/site.5l07svq29b.css.gz",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-5l07svq29b.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2938,7 +2846,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2622"
+          "Value": "1015"
         },
         {
           "Name": "Content-Type",
@@ -2946,56 +2854,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fdQslVlunbk6SsDC0wfQ14DK8dXTCtfCCwC6/T6kOVw=\""
+          "Value": "\"5qwa/titnQlcCsyvm+oaywtWkjvv7yJi5xMqWd4lH5E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 09:12:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "phk3iug3ys"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fdQslVlunbk6SsDC0wfQ14DK8dXTCtfCCwC6/T6kOVw="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.phk3iug3ys.css.gz",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-phk3iug3ys.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "988"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rUFFL5WDgucTQQt8qhJTSCAUvvHeIUswA/EGRunr01o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 09:12:34 GMT"
+          "Value": "Thu, 27 Feb 2025 09:45:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3013,7 +2876,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "phk3iug3ys"
+          "Value": "5l07svq29b"
         },
         {
           "Name": "label",
@@ -3021,7 +2884,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rUFFL5WDgucTQQt8qhJTSCAUvvHeIUswA/EGRunr01o="
+          "Value": "sha256-5qwa/titnQlcCsyvm+oaywtWkjvv7yJi5xMqWd4lH5E="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-5l07svq29b.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000984251969"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1015"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5qwa/titnQlcCsyvm+oaywtWkjvv7yJi5xMqWd4lH5E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:45:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"uZZVIzuzFZ4evf4HB3UyixHu8eZdAhWvzupNrAyrI/8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uZZVIzuzFZ4evf4HB3UyixHu8eZdAhWvzupNrAyrI/8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uZZVIzuzFZ4evf4HB3UyixHu8eZdAhWvzupNrAyrI/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:45:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uZZVIzuzFZ4evf4HB3UyixHu8eZdAhWvzupNrAyrI/8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\pd7f92sirr-5l07svq29b.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1015"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5qwa/titnQlcCsyvm+oaywtWkjvv7yJi5xMqWd4lH5E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 09:45:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5qwa/titnQlcCsyvm+oaywtWkjvv7yJi5xMqWd4lH5E="
         }
       ]
     },
@@ -3324,13 +3324,13 @@
       ]
     },
     {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-ltrnr4vhrt.gz",
+      "Route": "js/site.3e3kbtbypl.js",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-3e3kbtbypl.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001488095238"
+          "Quality": "0.005952380952"
         }
       ],
       "ResponseHeaders": [
@@ -3340,19 +3340,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "671"
+          "Value": "167"
         },
         {
           "Name": "ETag",
-          "Value": "\"aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4=\""
+          "Value": "\"BM8ylcfGucy6yFAPgkLkUrNQOwZT4K52sZX4F7X/2zw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 14:40:33 GMT"
+          "Value": "Thu, 27 Feb 2025 11:24:18 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3368,18 +3368,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ=\""
+          "Value": "W/\"1QKMSoV3dDWrUFIpLz+xvzUl0d4bWNcViCowZYby+hU=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "3e3kbtbypl"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ="
+          "Value": "sha256-1QKMSoV3dDWrUFIpLz+xvzUl0d4bWNcViCowZYby+hU="
         }
       ]
     },
     {
-      "Route": "js/site.js",
+      "Route": "js/site.3e3kbtbypl.js",
       "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3389,7 +3397,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1678"
+          "Value": "199"
         },
         {
           "Name": "Content-Type",
@@ -3397,121 +3405,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ=\""
+          "Value": "\"1QKMSoV3dDWrUFIpLz+xvzUl0d4bWNcViCowZYby+hU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 14:40:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-ltrnr4vhrt.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "671"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 14:40:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.ltrnr4vhrt.js",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-ltrnr4vhrt.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001488095238"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "671"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 14:40:33 GMT"
+          "Value": "Thu, 27 Feb 2025 11:24:18 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ltrnr4vhrt"
+          "Value": "3e3kbtbypl"
         },
         {
           "Name": "label",
@@ -3519,13 +3427,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ="
+          "Value": "sha256-1QKMSoV3dDWrUFIpLz+xvzUl0d4bWNcViCowZYby+hU="
         }
       ]
     },
     {
-      "Route": "js/site.ltrnr4vhrt.js",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js",
+      "Route": "js/site.3e3kbtbypl.js.gz",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-3e3kbtbypl.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3534,7 +3442,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1678"
+          "Value": "167"
         },
         {
           "Name": "Content-Type",
@@ -3542,56 +3450,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ=\""
+          "Value": "\"BM8ylcfGucy6yFAPgkLkUrNQOwZT4K52sZX4F7X/2zw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 14:40:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ltrnr4vhrt"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-macDDMNcH7YOAMJK5qjUhUdHkMIircJEjup83AWmQmQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.ltrnr4vhrt.js.gz",
-      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-ltrnr4vhrt.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "671"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 14:40:33 GMT"
+          "Value": "Thu, 27 Feb 2025 11:24:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3609,7 +3472,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ltrnr4vhrt"
+          "Value": "3e3kbtbypl"
         },
         {
           "Name": "label",
@@ -3617,7 +3480,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aGpp5UFRhxK1doEs6BYetWpnEHSyD6jnAIFZiKNIlN4="
+          "Value": "sha256-BM8ylcfGucy6yFAPgkLkUrNQOwZT4K52sZX4F7X/2zw="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-3e3kbtbypl.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005952380952"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BM8ylcfGucy6yFAPgkLkUrNQOwZT4K52sZX4F7X/2zw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 11:24:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1QKMSoV3dDWrUFIpLz+xvzUl0d4bWNcViCowZYby+hU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1QKMSoV3dDWrUFIpLz+xvzUl0d4bWNcViCowZYby+hU="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1QKMSoV3dDWrUFIpLz+xvzUl0d4bWNcViCowZYby+hU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 11:24:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1QKMSoV3dDWrUFIpLz+xvzUl0d4bWNcViCowZYby+hU="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js.gz",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\obj\\Debug\\net9.0\\compressed\\u18761l8ay-3e3kbtbypl.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BM8ylcfGucy6yFAPgkLkUrNQOwZT4K52sZX4F7X/2zw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 11:24:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BM8ylcfGucy6yFAPgkLkUrNQOwZT4K52sZX4F7X/2zw="
         }
       ]
     },

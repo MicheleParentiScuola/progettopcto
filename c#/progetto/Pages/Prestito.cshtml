@@ -1,0 +1,36 @@
+﻿@page
+@model PrestitoModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Author</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model.Books)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Genre</td>
+                    <td>@book.AuthorCF</td>
+                    <td>@book.ISBN</td>
+                </tr>
+            }
+            <tr>
+                <td><input type="button" name="prova"></td>
+                <td><input type="button" name="prova"></td>
+                <td><input type="button" name="prova"></td>
+                <td><input type="button" name="prova"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

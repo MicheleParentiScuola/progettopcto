@@ -8,7 +8,7 @@ namespace progettopcto.DTO
 {
     class AuthorDTO
     {
-        public string CF { get; set; }
+        public required string CF { get; set; }
         public required string Name { get; set; }
         public required string Surname { get; set; }
         
