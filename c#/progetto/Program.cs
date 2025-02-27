@@ -1,9 +1,15 @@
 using Microsoft.AspNetCore.Authentication.Negotiate;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using progettopcto.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<LibraryDbContext>(options =>
+{
+    options.UseSqlServer("Server=localhost;Database=library;Integrated Security=True;TrustServerCertificate=True");
+});
 
 builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
    .AddNegotiate();
