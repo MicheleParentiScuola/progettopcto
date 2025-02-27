@@ -20,7 +20,6 @@ namespace progettopcto.Data
         public DbSet<Book> Books { get; set; }
         public DbSet<Loan> Loans { get; set; }
         
-        /*
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Author>().HasData(
@@ -40,22 +39,21 @@ namespace progettopcto.Data
             );
 
             modelBuilder.Entity<User>().HasData(
-                new User { CF = "U1", Name = "User1", Surname = "Surname1", Address = "Address1" },
-                new User { CF = "U2", Name = "User2", Surname = "Surname2", Address = "Address2" },
-                new User { CF = "U3", Name = "User3", Surname = "Surname3", Address = "Address3" },
-                new User { CF = "U4", Name = "User4", Surname = "Surname4", Address = "Address4" },
-                new User { CF = "U5", Name = "User5", Surname = "Surname5", Address = "Address5" }
+                new User { CF = "U1", Name = "User1", Password = "Password01!", Surname = "Surname1", Address = "Address1" },
+                new User { CF = "U2", Name = "User2", Password = "Password01!", Surname = "Surname2", Address = "Address2" },
+                new User { CF = "U3", Name = "User3", Password = "Password01!", Surname = "Surname3", Address = "Address3" },
+                new User { CF = "U4", Name = "User4", Password = "Password01!", Surname = "Surname4", Address = "Address4" },
+                new User { CF = "U5", Name = "User5", Password = "Password01!", Surname = "Surname5", Address = "Address5" }
             );
-
+            DateTime start = new DateTime(2025, 1, 1, 12, 0, 0);
             modelBuilder.Entity<Loan>().HasData(
-                new Loan { Id = 1, BookISBN = 1, UserCF = "U1", StartDate = DateTime.Now.AddDays(-10), EndDate = DateTime.Now.AddDays(10) },
-                new Loan { Id = 2, BookISBN = 2, UserCF = "U2", StartDate = DateTime.Now.AddDays(-9), EndDate = DateTime.Now.AddDays(11) },
-                new Loan { Id = 3, BookISBN = 3, UserCF = "U3", StartDate = DateTime.Now.AddDays(-8), EndDate = DateTime.Now.AddDays(12) },
-                new Loan { Id = 4, BookISBN = 4, UserCF = "U4", StartDate = DateTime.Now.AddDays(-7), EndDate = DateTime.Now.AddDays(13) },
-                new Loan { Id = 5, BookISBN = 5, UserCF = "U5", StartDate = DateTime.Now.AddDays(-6), EndDate = DateTime.Now.AddDays(14) }
+                new Loan { Id = 1, BookISBN = 1, UserCF = "U1", StartDate = start.AddDays(-10), EndDate = start.AddDays(10) },
+                new Loan { Id = 2, BookISBN = 2, UserCF = "U2", StartDate = start.AddDays(-9), EndDate = start.AddDays(11) },
+                new Loan { Id = 3, BookISBN = 3, UserCF = "U3", StartDate = start.AddDays(-8), EndDate = start.AddDays(12) },
+                new Loan { Id = 4, BookISBN = 4, UserCF = "U4", StartDate = start.AddDays(-7), EndDate = start.AddDays(13) },
+                new Loan { Id = 5, BookISBN = 5, UserCF = "U5", StartDate = start.AddDays(-6), EndDate = start.AddDays(14) }
             );
         }
-        */
 
     }
 }
