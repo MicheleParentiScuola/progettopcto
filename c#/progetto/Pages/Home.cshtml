@@ -45,12 +45,39 @@
             .button:hover {
                 background-color: #0056b3;
             }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .loaned-books {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+            .loaned-books table {
+                width: 100%;
+            }
     </style>
 </head>
 <body>
 
     <div class="header">
-        @if (HttpContext.Session.GetString("UserName") != null)
+        @if (HttpContext.Session.GetString("UserCF") != null)
         {
             <h2>Benvenuto @HttpContext.Session.GetString("UserName") @HttpContext.Session.GetString("UserSurname")</h2>
             <!-- Bottone per il logout -->
@@ -58,8 +85,37 @@
                 <button type="submit" onclick="logout()">Logout</button>
             </form>
 
-            <!-- Bottone per andare alla pagina di prestito -->
-            <a href="/Prestito" class="button">Prendi in prestito un libro</a>
+            <h3>Libri disponibili per il prestito:</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="booksTableBody">
+                    <!-- La lista dei libri sarà popolata dinamicamente qui -->
+                </tbody>
+            </table>
+
+            <div class="loaned-books">
+                <h3>I tuoi libri presi in prestito:</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ISBN</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="loanedBooksTableBody">
+                        <!-- I libri presi in prestito saranno popolati dinamicamente qui -->
+                    </tbody>
+                </table>
+            </div>
 
         }
         else
@@ -71,19 +127,118 @@
         }
     </div>
 
-    <!-- Altri contenuti della home page -->
     <div class="content">
     </div>
+
     <script>
         // Funzione per eseguire il logout e rimuovere la sessione
         function logout() {
             // Rimuovi le informazioni di sessione
-            HttpContext.Session.Remove("UserName");
-            HttpContext.Session.Remove("UserSurname");
+            sessionStorage.removeItem("UserName");
+            sessionStorage.removeItem("UserSurname");
 
             // Reindirizza alla pagina di login
             window.location.href = "/SignUp";
         }
+
+        // Funzione per caricare i libri disponibili
+        async function loadBooks() {
+            const response = await fetch('/api/book/all');
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                console.error('Errore nella richiesta API:', errorMessage);
+                return;
+            }
+
+            const books = await response.json();
+            const tableBody = document.getElementById('booksTableBody');
+            tableBody.innerHTML = '';
+
+            books.forEach(book => {
+                if (!book.isBooked) {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${book.title}</td>
+                        <td>${book.genre}</td>
+                        <td>${book.authorCF}</td>
+                        <td>${book.isbn}</td>
+                        <td>
+                            <button onclick="borrowBook('${book.isbn}', '${book.title}', '${book.genre}')">Prendi in prestito</button>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                }
+            });
+        }
+
+        // Funzione per prenotare un libro
+        async function borrowBook(isbn, title, genre) {
+            const userCF = '@HttpContext.Session.GetString("UserCF")'; // Esegui il recupero del codice fiscale dell'utente
+
+            const loanData = {
+                bookISBN: isbn,
+                userCF: userCF,
+                startDate: new Date().toISOString(),
+                endDate: new Date(new Date().setDate(new Date().getDate() + 7)).toISOString() // Prestito di 7 giorni
+            };
+
+            const response = await fetch('/api/loan', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(loanData)
+            });
+
+            if (response.ok) {
+                // Aggiorna lo stato del libro a "IsBooked = true"
+                await fetch(`/api/book/borrow/${isbn}`, {
+                    method: 'PUT'
+                });
+
+                alert('Libro preso in prestito con successo!');
+                loadBooks();  // Ricarica la lista dei libri disponibili
+                loadLoanedBooks();  // Ricarica la lista dei libri presi in prestito
+            } else {
+                const errorMessage = await response.text();
+                console.error('Errore nella prenotazione del libro:', errorMessage);
+            }
+        }
+
+        // Funzione per caricare i libri presi in prestito
+        async function loadLoanedBooks() {
+            const userCF = '@HttpContext.Session.GetString("UserCF")'; // Recupera il codice fiscale dell'utente
+
+            const response = await fetch(`/api/loan/search?userCF=${userCF}`);
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                console.error('Errore nel caricamento dei libri presi in prestito:', errorMessage);
+                return;
+            }
+
+            const loans = await response.json();
+            const tableBody = document.getElementById('loanedBooksTableBody');
+            tableBody.innerHTML = '';
+
+            loans.forEach(loan => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${loan.bookISBN}</td>
+          
+                    <td>${new Date(loan.startDate).toLocaleDateString()}</td>
+                    <td>${new Date(loan.endDate).toLocaleDateString()}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Carica i libri quando la pagina è pronta
+        document.addEventListener('DOMContentLoaded', function () {
+            loadBooks();
+            loadLoanedBooks();
+        });
     </script>
 
 </body>

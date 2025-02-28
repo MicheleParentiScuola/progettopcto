@@ -8,7 +8,7 @@ namespace progetto.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    class AuthorController : ControllerBase
+    public class AuthorController : ControllerBase
     {
         private readonly LibraryDbContext _ctx;
         private readonly Mapper _mapper;
@@ -22,7 +22,7 @@ namespace progetto.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<AuthorDTO> result = _ctx.Authors.ToList()
+            var result = _ctx.Authors.ToList()
                 .ConvertAll(_mapper.MapEntityToDto);
             return Ok(result);
         }
@@ -45,6 +45,11 @@ namespace progetto.Controllers
             if (authorDto == null)
             {
                 return BadRequest();
+            }
+            var existingAuthor = _ctx.Authors.FirstOrDefault(a => a.CF == authorDto.CF);
+            if (existingAuthor != null)
+            {
+                return Conflict("Author with this CF already exists.");
             }
             var author = _mapper.MapDtoToEntity(authorDto);
             _ctx.Authors.Add(author);

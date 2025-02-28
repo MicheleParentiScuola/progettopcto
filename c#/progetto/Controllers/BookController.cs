@@ -28,7 +28,7 @@ namespace progetto.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<BookDTO> result = _ctx.Books.ToList()
+            var result = _ctx.Books.ToList()
                 .ConvertAll(_mapper.MapEntityToDto);
             return Ok(result);
         }
@@ -51,6 +51,11 @@ namespace progetto.Controllers
             if (bookDto == null)
             {
                 return BadRequest();
+            }
+            var existingBook = _ctx.Books.FirstOrDefault(b => b.ISBN == bookDto.ISBN);
+            if (existingBook != null)
+            {
+                return Conflict("Book with this ISBN already exists.");
             }
             var book = _mapper.MapDtoToEntity(bookDto);
             _ctx.Books.Add(book);
@@ -88,6 +93,19 @@ namespace progetto.Controllers
                 return NotFound();
             }
             _ctx.Books.Remove(book);
+            _ctx.SaveChanges();
+            return NoContent();
+        }
+        [HttpPut("borrow/{isbn}")]
+        public IActionResult BorrowBook(int isbn)
+        {
+            var book = _ctx.Books.FirstOrDefault(b => b.ISBN == isbn);
+            if (book == null)
+            {
+                return NotFound();
+            }
+            book.IsBooked = true;
+            _ctx.Books.Update(book);
             _ctx.SaveChanges();
             return NoContent();
         }

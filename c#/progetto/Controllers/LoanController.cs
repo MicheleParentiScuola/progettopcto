@@ -1,14 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using progettopcto.Data;
 using progettopcto.DTO;
-using System.Collections.Generic;
+using System;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
 
 namespace progetto.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    class LoanController : ControllerBase
+    public class LoanController : ControllerBase
     {
         private readonly LibraryDbContext _ctx;
         private readonly Mapper _mapper;
@@ -22,7 +23,7 @@ namespace progetto.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<LoanDTO> result = _ctx.Loans.ToList()
+            var result = _ctx.Loans.ToList()
                 .ConvertAll(_mapper.MapEntityToDto);
             return Ok(result);
         }
@@ -46,11 +47,28 @@ namespace progetto.Controllers
             {
                 return BadRequest();
             }
+
+            // Verifica se l'utente esiste  
+            var user = _ctx.Users.FirstOrDefault(u => u.CF == loanDto.UserCF);
+            if (user == null)
+            {
+                return BadRequest("User does not exist.");
+            }
+
+            // Verifica se il libro esiste  
+            var book = _ctx.Books.FirstOrDefault(b => b.ISBN == loanDto.BookISBN);
+            if (book == null)
+            {
+                return BadRequest("Book does not exist.");
+            }
+
             var loan = _mapper.MapDtoToEntity(loanDto);
             _ctx.Loans.Add(loan);
             _ctx.SaveChanges();
             return CreatedAtAction(nameof(GetById), new { id = loan.Id }, loanDto);
         }
+
+
 
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] LoanDTO loanDto)
@@ -64,8 +82,7 @@ namespace progetto.Controllers
             {
                 return NotFound();
             }
-            loan.BookISBN = loanDto.BookISBN;
-            loan.UserCF = loanDto.UserCF;
+
             loan.StartDate = loanDto.StartDate;
             loan.EndDate = loanDto.EndDate;
             _ctx.Loans.Update(loan);
@@ -81,9 +98,66 @@ namespace progetto.Controllers
             {
                 return NotFound();
             }
+
+            var book = _ctx.Books.FirstOrDefault(b => b.ISBN == loan.BookISBN);
+            if (book != null)
+            {
+                book.IsBooked = false; // Rendi disponibile il libro di nuovo
+            }
+
             _ctx.Loans.Remove(loan);
             _ctx.SaveChanges();
             return NoContent();
+        }
+
+        [HttpGet("search")]
+        public IActionResult Search([FromQuery] string userCF, [FromQuery] DateTime? startDate, [FromQuery] DateTime? endDate)
+        {
+            var query = _ctx.Loans.AsQueryable();
+
+            if (!string.IsNullOrEmpty(userCF))
+            {
+                query = query.Where(l => l.UserCF == userCF);
+            }
+
+            if (startDate.HasValue)
+            {
+                query = query.Where(l => l.StartDate >= startDate.Value);
+            }
+
+            if (endDate.HasValue)
+            {
+                query = query.Where(l => l.EndDate <= endDate.Value);
+            }
+
+            var result = query.ToList().ConvertAll(_mapper.MapEntityToDto);
+            return Ok(result);
+        }
+
+
+        // Nuovo metodo per restituire i libri presi in prestito dall'utente
+        [HttpGet("myloans")]
+        public IActionResult GetMyLoans()
+        {
+            // Recupera l'utente dalla sessione
+            var userCF = HttpContext.Session.GetString("UserCF");
+            if (string.IsNullOrEmpty(userCF))
+            {
+                return Unauthorized("User is not logged in.");
+            }
+
+            // Recupera i prestiti dell'utente
+            var loans = _ctx.Loans
+                .Where(l => l.UserCF == userCF)
+                .Select(l => new
+                {
+                    l.BookISBN,
+                    l.StartDate,
+                    l.EndDate
+                })
+                .ToList();
+
+            return Ok(loans);
         }
     }
 }
