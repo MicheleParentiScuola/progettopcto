@@ -4,14 +4,26 @@
     ViewData["Title"] = "Login Page";
 }
 
-<div class="form">
-    <h2>Login</h2>
-    <form id="loginForm" class="login">
-        <input type="email" placeholder="Email" id="email" name="email" required>
-        <input type="password" placeholder="Password" id="password" name="password" required>
-        <button type="submit">Login</button>
-    </form>
-    <p>Don't have an account? &nbsp;<a asp-area="" asp-page="/SignIn" class="signin-link">Register here</a></p>
+<div class="container mt-5">
+    <!-- Sezione Login -->
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Login</h2>
+            <form id="loginForm" class="login">
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Password" id="password" name="password" required>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-lg btn-success w-100">Login</button>
+
+                </div>
+            </form>
+            <p class="text-center mt-3">Don't have an account? &nbsp;<a asp-area="" asp-page="/SignIn" class="signin-link">Register here</a></p>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -49,7 +61,35 @@
         } catch (error) {
             // In caso di errore di rete
             console.error("Errore di rete:", error);
-            alert("Errore di rete. Riprovare più tardi.");
+            alert("Email o password errati o errore di rete.");
         }
     });
 </script>
+
+<style>
+    .signin-link {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+        .signin-link:hover {
+            color: #0056b3;
+        }
+
+    .login .form-control {
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    .login button {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .text-center {
+        margin-top: 50px;
+    }
+</style>

@@ -4,8 +4,60 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <br /><h1 class="display-4">Welcome</h1><br />
-    <a asp-area="" asp-page="/SignUp" class="signup-link">Sign Up</a>
+<div class="container mt-5">
+    <!-- Sezione principale con titolo, descrizione e pulsante -->
+    <div class="text-center py-5">
+        <h1 class="display-4 text-primary mb-4">Welcome to the Bookcase</h1>
+        <p class="lead text-secondary mb-5">Your personal library is just a click away. Explore and manage your books effortlessly.</p>
+        <a asp-area="" asp-page="/SignUp" class="btn btn-lg btn-success px-4 py-2">Sign Up</a>
+    </div>
 
+    <!-- Riga per le colonne laterali (left e right) -->
+    <div class="row">
+        <!-- Colonna di sinistra (aside left) -->
+        <aside class="col-md-6 mb-4">
+            <div class="bg-light p-4 rounded">
+                <h4>Parenti Michele</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+            </div>
+        </aside>
+
+        <!-- Colonna di destra (aside right) -->
+        <aside class="col-md-6 mb-4">
+            <div class="bg-light p-4 rounded">
+                <h4>Cedri Davide</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+            </div>
+        </aside>
+    </div>
 </div>
+
+<style>
+    
+    .signup-link {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #28a745;
+        border-radius: 5px;
+        padding: 10px 20px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .signup-link:hover {
+            background-color: #28a745;
+            color: white;
+        }
+
+    .text-center {
+        margin-top: 50px;
+    }
+
+    /* Aggiungi ombra per migliorare la visibilità delle sidebar */
+    aside .bg-light {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>

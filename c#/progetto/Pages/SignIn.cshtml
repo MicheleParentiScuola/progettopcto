@@ -4,17 +4,17 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="form_2">
-    <h2>Registration</h2>
+<div class="form_2" style="max-width: 400px; margin: 0 auto;">
+    <h2 class="text-center mb-4">Registration</h2>
     <form class="register" id="registrationForm">
-        <input type="text" placeholder="Name" id="nome" name="nome" required>
-        <input type="text" placeholder="Surname" id="cognome" name="cognome" required>
-        <input type="text" placeholder="Codice Fiscale" id="cf" name="cf" required>
-        <input type="email" placeholder="Email" id="email_reg" name="email" required>
-        <input type="password" placeholder="Password" id="password_reg" name="password" required>
-        <button type="submit">Sign in</button>
+        <input type="text" placeholder="Name" id="nome" name="nome" required class="form-control mb-3">
+        <input type="text" placeholder="Surname" id="cognome" name="cognome" required class="form-control mb-3">
+        <input type="text" placeholder="Codice Fiscale" id="cf" name="cf" required class="form-control mb-3">
+        <input type="email" placeholder="Email" id="email_reg" name="email" required class="form-control mb-3">
+        <input type="password" placeholder="Password" id="password_reg" name="password" required class="form-control mb-3">
+        <button type="submit" class="btn btn-lg btn-success w-100">Sign in</button>
     </form>
-    <p>Do you have just account? <a asp-area="" asp-page="/SignUp">Login here</a></p>
+    <p class="text-center mt-3">Do you have just account? <a asp-area="" asp-page="/SignUp">Login here</a></p>
 </div>
 
 @section Scripts {
