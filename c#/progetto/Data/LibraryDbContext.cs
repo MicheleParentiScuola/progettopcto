@@ -31,11 +31,11 @@ namespace progettopcto.Data
             );
 
             modelBuilder.Entity<Book>().HasData(
-                new Book { ISBN = 1, Title = "Book1", Genre = "Genre1", AuthorCF = "A1" },
-                new Book { ISBN = 2, Title = "Book2", Genre = "Genre2", AuthorCF = "A2" },
-                new Book { ISBN = 3, Title = "Book3", Genre = "Genre3", AuthorCF = "A3" },
-                new Book { ISBN = 4, Title = "Book4", Genre = "Genre4", AuthorCF = "A4" },
-                new Book { ISBN = 5, Title = "Book5", Genre = "Genre5", AuthorCF = "A5" }
+                new Book { ISBN = 1, Title = "Book1", Genre = "Genre1", AuthorCF = "A1", IsBooked=true},
+                new Book { ISBN = 2, Title = "Book2", Genre = "Genre2", AuthorCF = "A2", IsBooked = false },
+                new Book { ISBN = 3, Title = "Book3", Genre = "Genre3", AuthorCF = "A3" , IsBooked = false },
+                new Book { ISBN = 4, Title = "Book4", Genre = "Genre4", AuthorCF = "A4" , IsBooked = false },
+                new Book { ISBN = 5, Title = "Book5", Genre = "Genre5", AuthorCF = "A5" , IsBooked = false }
             );
 
             modelBuilder.Entity<User>().HasData(

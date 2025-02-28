@@ -12,7 +12,7 @@ using progettopcto.Data;
 namespace progetto.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
-    [Migration("20250227164219_seeding")]
+    [Migration("20250228115020_Seeding")]
     partial class Seeding
     {
         /// <inheritdoc />
@@ -91,6 +91,9 @@ namespace progetto.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsBooked")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -107,6 +110,7 @@ namespace progetto.Migrations
                             ISBN = 1,
                             AuthorCF = "A1",
                             Genre = "Genre1",
+                            IsBooked = true,
                             Title = "Book1"
                         },
                         new
@@ -114,6 +118,7 @@ namespace progetto.Migrations
                             ISBN = 2,
                             AuthorCF = "A2",
                             Genre = "Genre2",
+                            IsBooked = false,
                             Title = "Book2"
                         },
                         new
@@ -121,6 +126,7 @@ namespace progetto.Migrations
                             ISBN = 3,
                             AuthorCF = "A3",
                             Genre = "Genre3",
+                            IsBooked = false,
                             Title = "Book3"
                         },
                         new
@@ -128,6 +134,7 @@ namespace progetto.Migrations
                             ISBN = 4,
                             AuthorCF = "A4",
                             Genre = "Genre4",
+                            IsBooked = false,
                             Title = "Book4"
                         },
                         new
@@ -135,6 +142,7 @@ namespace progetto.Migrations
                             ISBN = 5,
                             AuthorCF = "A5",
                             Genre = "Genre5",
+                            IsBooked = false,
                             Title = "Book5"
                         });
                 });

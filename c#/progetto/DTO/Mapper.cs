@@ -37,6 +37,7 @@ namespace progettopcto.DTO
                 Title = entity.Title,
                 Genre = entity.Genre,
                 AuthorCF = entity.AuthorCF,
+                IsBooked = entity.IsBooked
 
             };
         }
@@ -49,6 +50,7 @@ namespace progettopcto.DTO
                 Title = bookDto.Title,
                 Genre = bookDto.Genre,
                 AuthorCF = bookDto.AuthorCF,
+                IsBooked = bookDto.IsBooked
 
             };
         }

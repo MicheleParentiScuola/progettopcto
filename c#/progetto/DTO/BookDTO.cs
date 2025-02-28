@@ -14,7 +14,9 @@ namespace progettopcto.DTO
         public required string Genre { get; set; }
         public required string AuthorCF { get; set; }
 
-       
+        public required Boolean IsBooked { get; set; }
+
+
 
     }
 }

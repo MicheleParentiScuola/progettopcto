@@ -18,12 +18,12 @@ namespace progetto.Controllers
             _ctx = ctx;
             _mapper = mapper;
         }
+
         [HttpGet("test")]
         public IActionResult Test()
         {
             return Ok("Il controller funziona!");
         }
-
 
         [HttpGet]
         public IActionResult GetAll()
@@ -73,6 +73,7 @@ namespace progetto.Controllers
             book.Title = bookDto.Title;
             book.Genre = bookDto.Genre;
             book.AuthorCF = bookDto.AuthorCF;
+            book.IsBooked = bookDto.IsBooked;
             _ctx.Books.Update(book);
             _ctx.SaveChanges();
             return NoContent();
@@ -114,12 +115,12 @@ namespace progetto.Controllers
             var result = query.ToList().ConvertAll(_mapper.MapEntityToDto);
             return Ok(result);
         }
+
         [HttpGet("all")]
         public IActionResult GetAllBooks()
         {
             var books = _ctx.Books.ToList().ConvertAll(_mapper.MapEntityToDto);
             return Ok(books);
         }
-
     }
 }
