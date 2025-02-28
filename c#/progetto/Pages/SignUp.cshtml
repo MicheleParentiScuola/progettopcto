@@ -1,19 +1,55 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Login Page";
 }
-
-
-
 
 <div class="form">
     <h2>Login</h2>
-    <form class="login" asp-page="/Prestito" method="post">
+    <form id="loginForm" class="login">
         <input type="email" placeholder="Email" id="email" name="email" required>
         <input type="password" placeholder="Password" id="password" name="password" required>
-        <button type="submit">Sign up</button>
+        <button type="submit">Login</button>
     </form>
     <p>Don't have an account? &nbsp;<a asp-area="" asp-page="/SignIn" class="signin-link">Register here</a></p>
-
 </div>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", async function (event) {
+        event.preventDefault(); // Impedisce l'invio del form
+
+        // Crea l'oggetto con i dati del login
+        const loginData = {
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value
+        };
+
+        try {
+            // Fai la richiesta POST al server
+            const response = await fetch('http://localhost:5164/api/user/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(loginData) // Passa i dati in formato JSON
+            });
+
+            // Se la risposta è OK, significa che l'autenticazione è riuscita
+            if (response.ok) {
+                const data = await response.json();
+                console.log("Login successful:", data);
+                // Redirigi l'utente alla pagina principale o dashboard
+                window.location.href = '/Home'; // Cambia '/Home' con la tua pagina di destinazione
+            } else {
+                // In caso di errore, mostra un messaggio all'utente
+                const error = await response.json();
+                console.error("Errore di login:", error);
+                alert("Email o password errati.");
+            }
+        } catch (error) {
+            // In caso di errore di rete
+            console.error("Errore di rete:", error);
+            alert("Errore di rete. Riprovare più tardi.");
+        }
+    });
+</script>

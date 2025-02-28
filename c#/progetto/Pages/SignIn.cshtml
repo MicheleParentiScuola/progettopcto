@@ -4,15 +4,50 @@
     ViewData["Title"] = "Home page";
 }
 
-
 <div class="form_2">
     <h2>Registration</h2>
-    <form class="register" asp-page="/SignUp" method="post">
+    <form class="register" id="registrationForm">
         <input type="text" placeholder="Name" id="nome" name="nome" required>
         <input type="text" placeholder="Surname" id="cognome" name="cognome" required>
+        <input type="text" placeholder="Codice Fiscale" id="cf" name="cf" required>
         <input type="email" placeholder="Email" id="email_reg" name="email" required>
         <input type="password" placeholder="Password" id="password_reg" name="password" required>
         <button type="submit">Sign in</button>
     </form>
-    <p>Do you have just account? <a asp-area="" asp-page="/SignUp" >Login here</a></p>
+    <p>Do you have just account? <a asp-area="" asp-page="/SignUp">Login here</a></p>
 </div>
+
+@section Scripts {
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", async function (event) {
+            event.preventDefault(); // Evita il comportamento di submit del form
+
+            // Prepara i dati da inviare
+            const user = {
+                cf: document.getElementById("cf").value, // Campo CF
+                name: document.getElementById("nome").value,
+                surname: document.getElementById("cognome").value,
+                address: document.getElementById("email_reg").value, // Uso email come address
+                password: document.getElementById("password_reg").value
+            };
+
+            // Invio la richiesta di creazione utente
+            const response = await fetch('http://localhost:5164/api/user', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(user)  // Converte i dati in formato JSON
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log("Utente creato:", data);
+                window.location.href = '/SignUp';  // Reindirizza alla pagina di login dopo la registrazione
+            } else {
+                const error = await response.json();
+                console.error("Errore nella creazione:", error);
+            }
+        });
+    </script>
+}

@@ -1,52 +1,90 @@
 ﻿@page
-@model progetto.Pages.HomeModel
+@model HomeModel
 @{
-    ViewData["Title"] = "Search Books";
+    ViewData["Title"] = "Home Page";
 }
-<h1>Home</h1>
 
-<form id="searchForm">
-    <div>
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" />
-    </div>
-    <div>
-        <label for="author">Author:</label>
-        <input type="text" id="author" name="author" />
-    </div>
-    <div>
-        <label for="genre">Genre:</label>
-        <input type="text" id="genre" name="genre" />
-    </div>
-    <button type="button" onclick="searchBooks()">Search</button>
-</form>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
 
-<div id="results"></div>
-
-@section Scripts {
-    <script>
-        async function searchBooks() {
-            const title = document.getElementById('title').value;
-            const author = document.getElementById('author').value;
-            const genre = document.getElementById('genre').value;
-
-            const response = await fetch(`/api/book/search?title=${title}&author=${author}&genre=${genre}`);
-            const books = await response.json();
-
-            const resultsDiv = document.getElementById('results');
-            resultsDiv.innerHTML = '';
-
-            if (books.length === 0) {
-                resultsDiv.innerHTML = '<p>No books found.</p>';
-            } else {
-                const ul = document.createElement('ul');
-                books.forEach(book => {
-                    const li = document.createElement('li');
-                    li.textContent = `${book.title} by ${book.authorCF} (Genre: ${book.genre})`;
-                    ul.appendChild(li);
-                });
-                resultsDiv.appendChild(ul);
+            .center-content a {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 18px;
             }
+
+                .center-content a:hover {
+                    background-color: #45a049;
+                }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+            .button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        @if (HttpContext.Session.GetString("UserName") != null)
+        {
+            <h2>Benvenuto @HttpContext.Session.GetString("UserName") @HttpContext.Session.GetString("UserSurname")</h2>
+            <!-- Bottone per il logout -->
+            <form method="post" action="/api/user/logout">
+                <button type="submit" onclick="logout()">Logout</button>
+            </form>
+
+            <!-- Bottone per andare alla pagina di prestito -->
+            <a href="/Prestito" class="button">Prendi in prestito un libro</a>
+
+        }
+        else
+        {
+            <div class="center-content">
+                <p>Login non effettuato</p>
+                <a href="/SignUp">Accedi</a> <!-- Link alla pagina di login -->
+            </div>
+        }
+    </div>
+
+    <!-- Altri contenuti della home page -->
+    <div class="content">
+    </div>
+    <script>
+        // Funzione per eseguire il logout e rimuovere la sessione
+        function logout() {
+            // Rimuovi le informazioni di sessione
+            HttpContext.Session.Remove("UserName");
+            HttpContext.Session.Remove("UserSurname");
+
+            // Reindirizza alla pagina di login
+            window.location.href = "/SignUp";
         }
     </script>
-}
+
+</body>
+</html>

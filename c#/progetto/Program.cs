@@ -25,6 +25,13 @@ builder.Services.AddRazorPages();
 builder.Services.AddControllers(); // Deve essere presente!
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSingleton<Mapper>();
+builder.Services.AddDistributedMemoryCache(); // Memoria per la sessione
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Timeout della sessione
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 
@@ -41,7 +48,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
-
+app.UseSession();
 app.UseRouting();
 
 app.UseAuthorization();
