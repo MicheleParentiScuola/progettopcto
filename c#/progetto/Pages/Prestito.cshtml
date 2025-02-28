@@ -1,36 +1,56 @@
 ﻿@page
 @model PrestitoModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Prestito";
 }
 
 <div class="text-center">
+    <h1>Books</h1>
     <table class="table">
         <thead>
             <tr>
-                
                 <th>Title</th>
                 <th>Genre</th>
                 <th>Author</th>
                 <th>ISBN</th>
             </tr>
         </thead>
-        <tbody>
-            @foreach (var book in Model.Books)
-            {
-                <tr>
-                    <td>@book.Title</td>
-                    <td>@book.Genre</td>
-                    <td>@book.AuthorCF</td>
-                    <td>@book.ISBN</td>
-                </tr>
-            }
-            <tr>
-                <td><input type="button" name="prova"></td>
-                <td><input type="button" name="prova"></td>
-                <td><input type="button" name="prova"></td>
-                <td><input type="button" name="prova"></td>
-            </tr>
+        <tbody id="booksTableBody">
         </tbody>
     </table>
 </div>
+
+@section Scripts {
+    <script>
+                async function loadBooks() {
+            const response = await fetch('/api/book/all');
+
+            if (!response.ok) {
+                // Se la risposta non è OK (404, 500, ecc.), mostriamo l'errore
+                const errorMessage = await response.text(); // Ottieni il testo completo della risposta
+                console.error('Errore nella richiesta API:', errorMessage);
+                return; // Esci dalla funzione per evitare di cercare di parse un errore come JSON
+            }
+
+            const books = await response.json();  // Solo se la risposta è ok, continua con la lettura dei dati JSON
+
+            const tableBody = document.getElementById('booksTableBody');
+            tableBody.innerHTML = '';
+
+            books.forEach(book => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${book.title}</td>
+                    <td>${book.genre}</td>
+                    <td>${book.authorCF}</td>
+                    <td>${book.isbn}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+
+        document.addEventListener('DOMContentLoaded', loadBooks);
+    </script>
+}
+

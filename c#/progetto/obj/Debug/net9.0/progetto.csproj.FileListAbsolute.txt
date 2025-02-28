@@ -371,7 +371,6 @@ C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\scopedcss\Pages
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\scopedcss\bundle\progetto.styles.css
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\scopedcss\projectbundle\progetto.bundle.scp.css
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\kwqiuup305-61n19gt1b8.gz
-C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\u18761l8ay-ltrnr4vhrt.gz
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\d93ww54s54-t1cqhe9u97.gz
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\h54gihsldh-c2jlpeoesf.gz
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\bppkw9abce-sejl45xvog.gz
@@ -449,6 +448,7 @@ C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\refint\progetto
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\progetto.pdb
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\progetto.genruntimeconfig.cache
 C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\ref\progetto.dll
-C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\pd7f92sirr-0rcxa1x9th.gz
 C:\Users\AdminPC\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\pd7f92sirr-5l07svq29b.gz
 C:\Users\AdminPC\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\u18761l8ay-3e3kbtbypl.gz
+C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\pd7f92sirr-5l07svq29b.gz
+C:\Users\PCTO2\Desktop\progettopcto\c#\progetto\obj\Debug\net9.0\compressed\u18761l8ay-3e3kbtbypl.gz

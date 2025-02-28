@@ -13,7 +13,7 @@ namespace progetto.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
     [Migration("20250227164219_seeding")]
-    partial class seeding
+    partial class Seeding
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

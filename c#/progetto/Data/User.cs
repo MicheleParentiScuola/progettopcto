@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace progettopcto.Data
 {
     [PrimaryKey(nameof(CF))]
-    class User
+    public class User
     {
         public required string CF { get; set; }
         public required string Name { get; set; }

@@ -8,7 +8,7 @@ namespace progetto.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    class BookController : ControllerBase
+    public class BookController : ControllerBase
     {
         private readonly LibraryDbContext _ctx;
         private readonly Mapper _mapper;
@@ -18,6 +18,12 @@ namespace progetto.Controllers
             _ctx = ctx;
             _mapper = mapper;
         }
+        [HttpGet("test")]
+        public IActionResult Test()
+        {
+            return Ok("Il controller funziona!");
+        }
+
 
         [HttpGet]
         public IActionResult GetAll()
@@ -108,5 +114,12 @@ namespace progetto.Controllers
             var result = query.ToList().ConvertAll(_mapper.MapEntityToDto);
             return Ok(result);
         }
+        [HttpGet("all")]
+        public IActionResult GetAllBooks()
+        {
+            var books = _ctx.Books.ToList().ConvertAll(_mapper.MapEntityToDto);
+            return Ok(books);
+        }
+
     }
 }

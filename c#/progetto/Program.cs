@@ -1,14 +1,16 @@
 using Microsoft.AspNetCore.Authentication.Negotiate;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using progettopcto.Data;
+using progettopcto.DTO;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<LibraryDbContext>(options =>
 {
-    options.UseSqlServer("Server=localhost;Database=bookcase;Integrated Security=True;TrustServerCertificate=True");
+    options.UseSqlServer("Server=localhost\\MSSQLSERVER07;Database=bookcase;Integrated Security=True;TrustServerCertificate=True");
 });
 
 builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
@@ -20,10 +22,14 @@ builder.Services.AddAuthorization(options =>
     options.FallbackPolicy = options.DefaultPolicy;
 });
 builder.Services.AddRazorPages();
+builder.Services.AddControllers(); // Deve essere presente!
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSingleton<Mapper>();
 
 var app = builder.Build();
 
-DatabaseTest dt = new DatabaseTest("Server=localhost;Database=bookcase;Integrated Security=True;TrustServerCertificate=True");
+
+DatabaseTest dt = new DatabaseTest("Server=localhost\\MSSQLSERVER07;Database=bookcase;Integrated Security=True;TrustServerCertificate=True");
 dt.TestConnection();
 
 // Configure the HTTP request pipeline.
@@ -43,7 +49,7 @@ app.UseAuthorization();
 app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
-
+app.MapControllers();
 app.Run();
 
 public class DatabaseTest

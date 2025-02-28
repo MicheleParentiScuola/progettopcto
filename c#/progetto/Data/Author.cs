@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace progettopcto.Data
 {
     [PrimaryKey(nameof(CF))]
-    class Author
+    public class Author
     {
         public required string CF { get; set; }
         public required string Name { get; set; }

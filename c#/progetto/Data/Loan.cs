@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace progettopcto.Data
 {
     [PrimaryKey(nameof(Id))]
-    class Loan
+    public class Loan
     {
         public int Id { get; set; }
         public int BookISBN { get; set; }

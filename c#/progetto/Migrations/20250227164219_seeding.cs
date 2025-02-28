@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace progetto.Migrations
 {
     /// <inheritdoc />
-    public partial class seeding : Migration
+    public partial class Seeding : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace progettopcto.Data
 {
-    class LibraryDbContext : DbContext
+    public class LibraryDbContext : DbContext
     {
         public LibraryDbContext(DbContextOptions<LibraryDbContext> options) : base(options)
         {

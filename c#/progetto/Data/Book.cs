@@ -10,7 +10,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace progettopcto.Data
 {
     [PrimaryKey(nameof(ISBN))]
-    class Book
+    public class Book
     {
         public int ISBN { get; set; }
         public required string Title { get; set; }

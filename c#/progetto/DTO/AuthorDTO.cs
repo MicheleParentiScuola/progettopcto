@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace progettopcto.DTO
 {
-    class AuthorDTO
+    public class AuthorDTO
     {
         public required string CF { get; set; }
         public required string Name { get; set; }

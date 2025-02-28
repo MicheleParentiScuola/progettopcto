@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace progettopcto.DTO
 {
-    class BookDTO
+    public class BookDTO
     {
 
         public int ISBN { get; set; }

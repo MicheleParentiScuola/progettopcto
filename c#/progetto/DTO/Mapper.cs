@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace progettopcto.DTO
 {
-    internal class Mapper
+    public class Mapper
     {
         public AuthorDTO MapEntityToDto(Author entity)
         {
