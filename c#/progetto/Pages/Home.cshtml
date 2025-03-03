@@ -20,18 +20,18 @@
             text-align: center;
         }
 
-            .center-content a {
-                padding: 10px 20px;
-                background-color: #4CAF50;
-                color: white;
-                text-decoration: none;
-                border-radius: 5px;
-                font-size: 18px;
-            }
+        .center-content a {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
 
-                .center-content a:hover {
-                    background-color: #45a049;
-                }
+        .center-content a:hover {
+            background-color: #45a049;
+        }
 
         .button {
             padding: 10px 20px;
@@ -42,9 +42,9 @@
             font-size: 18px;
         }
 
-            .button:hover {
-                background-color: #0056b3;
-            }
+        .button:hover {
+            background-color: #0056b3;
+        }
 
         table {
             width: 100%;
@@ -69,15 +69,28 @@
             border-radius: 5px;
         }
 
-            .loaned-books table {
-                width: 100%;
-            }
+        .loaned-books table {
+            width: 100%;
+        }
+
+        .return-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .return-button:hover {
+            background-color: darkred;
+        }
     </style>
 </head>
 <body>
 
     <div class="header">
-        @if (HttpContext.Session.GetString("UserCF") != null)
+        @if (HttpContext.Session.GetString("UserName") != null)
         {
             <h2>Benvenuto @HttpContext.Session.GetString("UserName") @HttpContext.Session.GetString("UserSurname")</h2>
             <!-- Bottone per il logout -->
@@ -109,6 +122,7 @@
                             <th>ISBN</th>
                             <th>Start Date</th>
                             <th>End Date</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody id="loanedBooksTableBody">
@@ -161,7 +175,7 @@
                     row.innerHTML = `
                         <td>${book.title}</td>
                         <td>${book.genre}</td>
-                        <td>${book.authorCF}</td>
+                        <td><button onclick="viewAuthor('${book.authorCF}')">${book.authorCF}</button></td>
                         <td>${book.isbn}</td>
                         <td>
                             <button onclick="borrowBook('${book.isbn}', '${book.title}', '${book.genre}')">Prendi in prestito</button>
@@ -171,6 +185,24 @@
                 }
             });
         }
+
+         async function viewAuthor(authorCF) {
+            const response = await fetch(`/api/author/${authorCF}`);
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                console.error('Errore nella richiesta API:', errorMessage);
+                return;
+            }
+            
+            const author = await response.json();
+
+            // Reindirizza alla pagina di visualizzazione dell'autore con solo il cf
+            window.location.href = `/AuthorDetails?cf=${authorCF}`;
+           
+        }
+
+
 
         // Funzione per prenotare un libro
         async function borrowBook(isbn, title, genre) {
@@ -206,6 +238,27 @@
             }
         }
 
+        // Funzione per restituire un libro
+        async function returnBook(loanId, isbn) {
+            const response = await fetch(`/api/loan/${loanId}`, {
+                method: 'DELETE'
+            });
+
+            if (response.ok) {
+                // Aggiorna lo stato del libro a "IsBooked = false"
+                await fetch(`/api/book/return/${isbn}`, {
+                    method: 'PUT'
+                });
+
+                alert('Libro restituito con successo!');
+                loadBooks();  // Ricarica la lista dei libri disponibili
+                loadLoanedBooks();  // Ricarica la lista dei libri presi in prestito
+            } else {
+                const errorMessage = await response.text();
+                console.error('Errore nella restituzione del libro:', errorMessage);
+            }
+        }
+
         // Funzione per caricare i libri presi in prestito
         async function loadLoanedBooks() {
             const userCF = '@HttpContext.Session.GetString("UserCF")'; // Recupera il codice fiscale dell'utente
@@ -226,9 +279,11 @@
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${loan.bookISBN}</td>
-          
                     <td>${new Date(loan.startDate).toLocaleDateString()}</td>
                     <td>${new Date(loan.endDate).toLocaleDateString()}</td>
+                    <td>
+                        <button class="return-button" onclick="returnBook(${loan.id}, ${loan.bookISBN})">Restituisci</button>
+                    </td>
                 `;
                 tableBody.appendChild(row);
             });

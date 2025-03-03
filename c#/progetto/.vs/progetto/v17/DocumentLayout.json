@@ -3,64 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\signin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\signin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\authordetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\authordetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\authordetails.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\authordetails.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\prestito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\prestito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\data\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:data\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\data\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:data\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\dto\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:dto\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\data\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:data\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\dto\\loandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:dto\\loandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\dto\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:dto\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\signin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\signin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\data\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:data\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -71,28 +111,8 @@
       "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\pages\\prestito.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:pages\\prestito.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\dto\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:dto\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\dto\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:dto\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -101,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|c:\\users\\pcto2\\desktop\\progettopcto\\c#\\progetto\\dto\\loandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155EBF53-8DAE-4E68-8475-3E9899CBBE30}|progetto.csproj|solutionrelative:dto\\loandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 339,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,91 +142,228 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Home.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Home.cshtml",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Home.cshtml",
+              "RelativeToolTip": "Pages\\Home.cshtml",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAwwMgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T15:19:12.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthorDTO.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\AuthorDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\AuthorDTO.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\AuthorDTO.cs",
+              "RelativeToolTip": "DTO\\AuthorDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T09:11:37.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "AuthorController.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\AuthorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthorController.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\AuthorController.cs",
+              "RelativeToolTip": "Controllers\\AuthorController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T09:11:06.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthorDetails.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\AuthorDetails.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\AuthorDetails.cshtml.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\AuthorDetails.cshtml.cs",
+              "RelativeToolTip": "Pages\\AuthorDetails.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:15:17.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Error.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Error.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Error.cshtml.cs",
+              "RelativeToolTip": "Pages\\Error.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:11:56.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthorDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\AuthorDetails.cshtml",
+              "RelativeDocumentMoniker": "Pages\\AuthorDetails.cshtml",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\AuthorDetails.cshtml",
+              "RelativeToolTip": "Pages\\AuthorDetails.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T09:11:25.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Pages\\Error.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T09:12:15.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Author.cs",
+              "RelativeDocumentMoniker": "Data\\Author.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Author.cs",
+              "RelativeToolTip": "Data\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T16:37:21.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoanDTO.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\LoanDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\LoanDTO.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\LoanDTO.cs",
+              "RelativeToolTip": "DTO\\LoanDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T09:11:14.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LibraryDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\LibraryDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\LibraryDbContext.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\LibraryDbContext.cs",
+              "RelativeToolTip": "Data\\LibraryDbContext.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswCEAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T16:36:56.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAQwLIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-03T09:23:53.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-03T09:24:10.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Mapper.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\Mapper.cs",
+              "RelativeDocumentMoniker": "DTO\\Mapper.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\Mapper.cs",
+              "RelativeToolTip": "DTO\\Mapper.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:32:29.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\BookController.cs",
               "RelativeToolTip": "Controllers\\BookController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAowG4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAowGEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T08:57:15.251Z"
+              "WhenOpened": "2025-02-28T08:57:15.251Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "LoanController.cs",
               "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\LoanController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoanController.cs",
               "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\LoanController.cs",
               "RelativeToolTip": "Controllers\\LoanController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAowEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA7wEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T09:07:21.747Z"
+              "WhenOpened": "2025-02-28T09:07:21.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAowFQAAAANAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "BookDTO.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\BookDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\BookDTO.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\BookDTO.cs",
+              "RelativeToolTip": "DTO\\BookDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:33:54.963Z"
+              "WhenOpened": "2025-02-28T09:05:39.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Loan.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Loan.cs",
-              "RelativeDocumentMoniker": "Data\\Loan.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Loan.cs",
-              "RelativeToolTip": "Data\\Loan.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Book.cs",
+              "RelativeDocumentMoniker": "Data\\Book.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Book.cs",
+              "RelativeToolTip": "Data\\Book.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:33:53.332Z"
+              "WhenOpened": "2025-02-27T15:35:57.178Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\User.cs",
-              "RelativeDocumentMoniker": "Data\\User.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\User.cs",
-              "RelativeToolTip": "Data\\User.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:29:15.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Prestito.cshtml",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Prestito.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Prestito.cshtml",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Prestito.cshtml",
-              "RelativeToolTip": "Pages\\Prestito.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T15:19:13.662Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Prestito.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Prestito.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Prestito.cshtml.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Prestito.cshtml.cs",
-              "RelativeToolTip": "Pages\\Prestito.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T08:58:38.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
@@ -223,7 +376,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 22,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAowFQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:33:54.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SignIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\SignIn.cshtml",
+              "RelativeDocumentMoniker": "Pages\\SignIn.cshtml",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\SignIn.cshtml",
+              "RelativeToolTip": "Pages\\SignIn.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T15:19:15.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "Pages\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\SignUp.cshtml",
+              "RelativeToolTip": "Pages\\SignUp.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T15:19:16.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "SignIn.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\SignIn.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\SignIn.cshtml.cs",
@@ -231,51 +422,35 @@
               "RelativeToolTip": "Pages\\SignIn.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:21:05.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T15:21:05.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SignUp.cshtml",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\SignUp.cshtml",
-              "RelativeDocumentMoniker": "Pages\\SignUp.cshtml",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\SignUp.cshtml",
-              "RelativeToolTip": "Pages\\SignUp.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T15:19:16.113Z",
-              "EditorCaption": ""
+              "DocumentIndex": 23,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\User.cs",
+              "RelativeDocumentMoniker": "Data\\User.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\User.cs",
+              "RelativeToolTip": "Data\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:29:15.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SignIn.cshtml",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\SignIn.cshtml",
-              "RelativeDocumentMoniker": "Pages\\SignIn.cshtml",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\SignIn.cshtml",
-              "RelativeToolTip": "Pages\\SignIn.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAIwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T15:19:15.204Z",
-              "EditorCaption": ""
+              "DocumentIndex": 24,
+              "Title": "Loan.cs",
+              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Loan.cs",
+              "RelativeDocumentMoniker": "Data\\Loan.cs",
+              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Loan.cs",
+              "RelativeToolTip": "Data\\Loan.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:33:53.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Home.cshtml",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Home.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Home.cshtml",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Home.cshtml",
-              "RelativeToolTip": "Pages\\Home.cshtml",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAIwHEAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T15:19:12.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 21,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
@@ -283,48 +458,11 @@
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABsAAAAAAAAAAAAswCwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-28T15:14:54.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T15:14:54.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Author.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Author.cs",
-              "RelativeDocumentMoniker": "Data\\Author.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Author.cs",
-              "RelativeToolTip": "Data\\Author.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T16:37:21.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Book.cs",
-              "RelativeDocumentMoniker": "Data\\Book.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\Book.cs",
-              "RelativeToolTip": "Data\\Book.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:35:57.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AuthorController.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\AuthorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthorController.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Controllers\\AuthorController.cs",
-              "RelativeToolTip": "Controllers\\AuthorController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T09:11:06.872Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -336,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 26,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -348,19 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AuthorDTO.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\AuthorDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\AuthorDTO.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\AuthorDTO.cs",
-              "RelativeToolTip": "DTO\\AuthorDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T09:11:37.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\UserDTO.cs",
               "RelativeDocumentMoniker": "DTO\\UserDTO.cs",
@@ -372,43 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "LibraryDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\LibraryDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\LibraryDbContext.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Data\\LibraryDbContext.cs",
-              "RelativeToolTip": "Data\\LibraryDbContext.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAswCEAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T16:36:56.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "BookDTO.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\BookDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\BookDTO.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\BookDTO.cs",
-              "RelativeToolTip": "DTO\\BookDTO.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T09:05:39.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Mapper.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\Mapper.cs",
-              "RelativeDocumentMoniker": "DTO\\Mapper.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\Mapper.cs",
-              "RelativeToolTip": "DTO\\Mapper.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAMwDYAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:32:29.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -420,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "serviceDependencies.json",
               "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\Properties\\serviceDependencies.json",
               "RelativeDocumentMoniker": "Properties\\serviceDependencies.json",
@@ -429,18 +519,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-28T09:24:55.411Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "LoanDTO.cs",
-              "DocumentMoniker": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\LoanDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\LoanDTO.cs",
-              "ToolTip": "C:\\Users\\PCTO2\\Desktop\\progettopcto\\c#\\progetto\\DTO\\LoanDTO.cs",
-              "RelativeToolTip": "DTO\\LoanDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T09:11:14.276Z"
             }
           ]
         },

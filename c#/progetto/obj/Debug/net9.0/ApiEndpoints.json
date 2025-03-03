@@ -79,6 +79,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "progetto.Controllers.AuthorController",
+    "Method": "GetAuthor",
+    "RelativePath": "api/Author/api/author/{cf}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cf",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "progettopcto.DTO.AuthorDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "progetto.Controllers.BookController",
     "Method": "GetAll",
     "RelativePath": "api/Book",
@@ -171,6 +197,22 @@
     "ContainingType": "progetto.Controllers.BookController",
     "Method": "BorrowBook",
     "RelativePath": "api/Book/borrow/{isbn}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isbn",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "progetto.Controllers.BookController",
+    "Method": "ReturnBook",
+    "RelativePath": "api/Book/return/{isbn}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

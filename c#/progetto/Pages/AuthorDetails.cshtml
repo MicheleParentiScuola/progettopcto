@@ -1,0 +1,50 @@
+﻿@page
+@model AuthorDetailsModel
+@{
+    ViewData["Title"] = "Dettagli Autore";
+}
+
+<div style="text-align: center;">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<div id="authorDetails">
+    <p><strong>Codice Fiscale:</strong> <span id="authorCF"></span></p>
+    <p><strong>Nome:</strong> <span id="authorName"></span></p>
+    <p><strong>Cognome:</strong> <span id="authorSurname"></span></p>
+
+    <button onclick="goBack()">Torna Indietro</button>
+</div>
+
+<script>
+
+    async function loadAuthorDetails() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const authorCF = urlParams.get('cf');
+
+        if (!authorCF) {
+            console.error('Codice Fiscale mancante nella query string!');
+            return;
+        }
+        console.log('Codice Fiscale dell\'autore:', authorCF);
+        const response = await fetch(`/api/author/${authorCF}`);
+
+        if (!response.ok) {
+            const errorMessage = await response.text();
+            console.error('Errore nella richiesta API:', errorMessage);
+            return;
+        }
+
+        const author = await response.json();
+
+        document.getElementById("authorCF").innerText = author.cf;
+        document.getElementById("authorName").innerText = author.name;
+        document.getElementById("authorSurname").innerText = author.surname;
+    }
+
+    function goBack() {
+         window.history.back();
+    }
+
+    document.addEventListener("DOMContentLoaded", loadAuthorDetails);
+</script>

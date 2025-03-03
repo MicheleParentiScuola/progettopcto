@@ -83,7 +83,19 @@ namespace progetto.Controllers
             _ctx.SaveChanges();
             return NoContent();
         }
-
+        [HttpPut("return/{isbn}")]
+        public IActionResult ReturnBook(int isbn)
+        {
+            var book = _ctx.Books.FirstOrDefault(b => b.ISBN == isbn);
+            if (book == null)
+            {
+                return NotFound();
+            }
+            book.IsBooked = false;
+            _ctx.Books.Update(book);
+            _ctx.SaveChanges();
+            return NoContent();
+        }
         [HttpDelete("{isbn}")]
         public IActionResult Delete(int isbn)
         {
