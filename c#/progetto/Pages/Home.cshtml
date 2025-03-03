@@ -85,19 +85,27 @@
             .return-button:hover {
                 background-color: darkred;
             }
+
+        .alert-red {
+            color: red;
+            font-weight: bold;
+        }
+
+        .alert-green {
+            color: green;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
-    <div class="header">
+    <div>
         @if (HttpContext.Session.GetString("UserName") != null)
         {
-            <h2>Welcome @HttpContext.Session.GetString("UserName") @HttpContext.Session.GetString("UserSurname")</h2>
+            <h2 style="text-align: center">Welcome @HttpContext.Session.GetString("UserName") @HttpContext.Session.GetString("UserSurname")</h2>
             <br>
-            <form method="post" action="/api/user/logout">
-                <button type="submit" onclick="logout()">Logout</button>
-            </form>
-            <br>
+
+
 
             <h3>Books available for loan:</h3>
             <table class="table">
@@ -125,6 +133,7 @@
                             <th>End Date</th>
                             <th>Action</th>
                             <th>Details</th>
+                            <th>Time Remaining</th>
                             <th>Alerts</th>
                         </tr>
                     </thead>
@@ -132,24 +141,41 @@
                     </tbody>
                 </table>
             </div>
+            <br />
 
+            <br />
+            <button type="submit" onclick="logout()">Logout</button>
         }
         else
         {
             <div class="center-content">
                 <p>Login non effettuato</p>
-                <a href="/SignUp">Accedi</a> 
+                <a href="/SignUp">Accedi</a>
             </div>
         }
     </div>
 
     <script>
-        function logout() {
-            sessionStorage.removeItem("UserName");
-            sessionStorage.removeItem("UserSurname");
-            window.location.href = "/SignUp";
+               // Aggiungi questo JavaScript a wwwroot/js/site.js
+
+        // Funzione per eseguire il logout e rimuovere la sessione
+        async function logout() {
+            const response = await fetch('/api/user/logout', {
+                method: 'POST'
+            });
+
+            if (response.ok) {
+                sessionStorage.removeItem("UserName");
+                sessionStorage.removeItem("UserSurname");
+                sessionStorage.removeItem("UserCF");
+                window.location.href = "/SignUp";
+            } else {
+                const errorMessage = await response.text();
+                console.error('Errore nel logout:', errorMessage);
+            }
         }
 
+        // Funzione per caricare i libri disponibili
         async function loadBooks() {
             const response = await fetch('/api/book/all');
 
@@ -180,7 +206,8 @@
             });
         }
 
-         async function viewAuthor(authorCF) {
+        // Funzione per visualizzare le informazioni dell'autore
+        async function viewAuthor(authorCF) {
             const response = await fetch(`/api/author/${authorCF}`);
 
             if (!response.ok) {
@@ -190,18 +217,20 @@
             }
 
             const author = await response.json();
-
+            console.error(author);
+            // Reindirizza alla pagina di visualizzazione dell'autore con le informazioni dell'autore
             window.location.href = `/AuthorDetails?cf=${authorCF}`;
         }
 
+        // Funzione per prenotare un libro
         async function borrowBook(isbn, title, genre) {
-            const userCF = '@HttpContext.Session.GetString("UserCF")';
+            const userCF = '@HttpContext.Session.GetString("UserCF")'; // Esegui il recupero del codice fiscale dell'utente
 
             const loanData = {
                 bookISBN: isbn,
                 userCF: userCF,
                 startDate: new Date().toISOString(),
-                endDate: new Date(new Date().setDate(new Date().getDate() + 30)).toISOString() 
+                endDate: new Date(new Date().setDate(new Date().getDate() + 30)).toISOString() // Prestito di 30 giorni
             };
 
             const response = await fetch('/api/loan', {
@@ -213,41 +242,44 @@
             });
 
             if (response.ok) {
+                // Aggiorna lo stato del libro a "IsBooked = true"
                 await fetch(`/api/book/borrow/${isbn}`, {
                     method: 'PUT'
                 });
 
                 alert('Libro preso in prestito con successo!');
-
-                loadBooks();
-                loadLoanedBooks(); 
+                loadBooks();  // Ricarica la lista dei libri disponibili
+                loadLoanedBooks();  // Ricarica la lista dei libri presi in prestito
             } else {
                 const errorMessage = await response.text();
                 console.error('Errore nella prenotazione del libro:', errorMessage);
             }
         }
 
+        // Funzione per restituire un libro
         async function returnBook(loanId, isbn) {
             const response = await fetch(`/api/loan/${loanId}`, {
                 method: 'DELETE'
             });
+
             if (response.ok) {
+                // Aggiorna lo stato del libro a "IsBooked = false"
                 await fetch(`/api/book/return/${isbn}`, {
                     method: 'PUT'
                 });
 
                 alert('Libro restituito con successo!');
-
-                loadBooks();
-                loadLoanedBooks();
+                loadBooks();  // Ricarica la lista dei libri disponibili
+                loadLoanedBooks();  // Ricarica la lista dei libri presi in prestito
             } else {
                 const errorMessage = await response.text();
                 console.error('Errore nella restituzione del libro:', errorMessage);
             }
         }
 
+        // Funzione per caricare i libri presi in prestito
         async function loadLoanedBooks() {
-            const userCF = '@HttpContext.Session.GetString("UserCF")';
+            const userCF = '@HttpContext.Session.GetString("UserCF")'; // Recupera il codice fiscale dell'utente
 
             const response = await fetch(`/api/loan/search?userCF=${userCF}`);
 
@@ -262,6 +294,23 @@
             tableBody.innerHTML = '';
 
             loans.forEach(loan => {
+                const endDate = new Date(loan.endDate);
+                const currentDate = new Date();
+                const daysRemaining = Math.ceil((endDate - currentDate) / (1000 * 60 * 60 * 24));
+                let alertMessage = '';
+                let alertClass = '';
+
+                if (daysRemaining < 0) {
+                    alertMessage = 'Scaduto, riconsegnalo al più presto';
+                    alertClass = 'alert-red';
+                } else if (daysRemaining < 7) {
+                    alertMessage = 'In scadenza a breve';
+                    alertClass = 'alert-red';
+                } else {
+                    alertMessage = 'Nessun avviso';
+                    alertClass = 'alert-green';
+                }
+
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${loan.bookISBN}</td>
@@ -270,23 +319,27 @@
                     <td>
                         <button class="return-button" onclick="returnBook(${loan.id}, ${loan.bookISBN})">Restituisci</button>
                     </td>
-                     <td>
+                    <td>
                         <button onclick="viewBookDetails('${loan.bookISBN}')">Visualizza Dettagli</button>
-                     </td>
-
+                    </td>
+                    <td>${daysRemaining >= 0 ? daysRemaining + ' days' : ''}</td>
+                    <td class="${alertClass}">${alertMessage}</td>
                 `;
                 tableBody.appendChild(row);
             });
         }
 
+        // Funzione per visualizzare i dettagli del libro
         async function viewBookDetails(isbn) {
             window.location.href = `/BookDetails?isbn=${isbn}`;
         }
 
+        // Carica i libri quando la pagina è pronta
         document.addEventListener('DOMContentLoaded', function () {
             loadBooks();
             loadLoanedBooks();
         });
+
     </script>
 
 </body>

@@ -94,14 +94,10 @@ namespace progetto.Controllers
         [HttpPost("logout")]
         public IActionResult Logout()
         {
-            // Rimuovi le informazioni di sessione relative all'utente
-            HttpContext.Session.Remove("UserName");
-            HttpContext.Session.Remove("UserSurname");
-            HttpContext.Session.Remove("UserCF");
-
-            // Reindirizza alla pagina di login (SignUp)
-            return Redirect("/SignUp");
+            HttpContext.Session.Clear();
+            return Ok();
         }
+
 
         [HttpPut("{cf}")]
         public IActionResult Update(string cf, [FromBody] UserDTO userDto)
