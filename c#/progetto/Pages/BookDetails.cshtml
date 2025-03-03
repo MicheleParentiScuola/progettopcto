@@ -1,0 +1,64 @@
+﻿@page
+@model BookDetailsModel
+@{
+    ViewData["Title"] = "Dettagli Libro";
+}
+
+<h1>Dettagli Libro</h1>
+
+<!-- I dettagli del libro verranno caricati dinamicamente qui -->
+<div id="bookDetails">
+    <p>Caricamento in corso...</p>
+</div>
+
+
+<button onclick="goBack()">Torna indietro</button>
+
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    // Recupera l'ISBN dalla query string
+    const urlParams = new URLSearchParams(window.location.search);
+    const isbn = urlParams.get('isbn');
+
+    // Funzione per caricare i dettagli del libro
+    async function loadBookDetails() {
+        try {
+            // Fai una richiesta API per ottenere i dettagli del libro
+            const response = await fetch(`/api/book/${isbn}`);
+            if (!response.ok) {
+                throw new Error('Libro non trovato');
+            }
+
+            const book = await response.json();
+            console.error(book);
+
+            // Fai una richiesta API per ottenere i dettagli dell'autore
+            const authorResponse = await fetch(`/api/author/${book.authorCF}`);
+            if (!authorResponse.ok) {
+                throw new Error('Autore non trovato');
+            }
+
+            const author = await authorResponse.json();
+
+            // Aggiorna la pagina con i dettagli del libro e dell'autore
+            document.getElementById('bookDetails').innerHTML = `
+                <h2>ISBN: ${book.isbn}</h2>
+                <p><strong>Titolo:</strong> ${book.title}</p>
+                <p><strong>Autore:</strong> ${author.name} ${author.surname}</p>
+                <p><strong>Genere:</strong> ${book.genre}</p>
+                <!-- Puoi aggiungere altri dettagli qui -->
+            `;
+        } catch (error) {
+            // In caso di errore, mostra un messaggio
+            document.getElementById('bookDetails').innerHTML = `
+                <p>Errore: ${error.message}</p>
+            `;
+        }
+    }
+
+    // Carica i dettagli del libro quando la pagina è pronta
+    loadBookDetails();
+</script>

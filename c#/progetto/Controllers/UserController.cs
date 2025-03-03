@@ -94,8 +94,13 @@ namespace progetto.Controllers
         [HttpPost("logout")]
         public IActionResult Logout()
         {
-            HttpContext.Session.Clear();
-            return Ok(new { message = "Logout effettuato con successo!" });
+            // Rimuovi le informazioni di sessione relative all'utente
+            HttpContext.Session.Remove("UserName");
+            HttpContext.Session.Remove("UserSurname");
+            HttpContext.Session.Remove("UserCF");
+
+            // Reindirizza alla pagina di login (SignUp)
+            return Redirect("/SignUp");
         }
 
         [HttpPut("{cf}")]
