@@ -81,18 +81,34 @@
             cursor: pointer;
             border-radius: 4px;
         }
+        .details-button{
+            background-color:green;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
 
             .return-button:hover {
                 background-color: darkred;
             }
 
         .alert-red {
-            color: red;
+            color: red !important;
+            accent-color: red;
             font-weight: bold;
         }
 
         .alert-green {
-            color: green;
+            color: green !important;
+            accent-color: green;
+            font-weight: bold;
+        }
+        .alert-orange {
+            color: darkorange !important;
+            accent-color: darkorange;
             font-weight: bold;
         }
     </style>
@@ -171,7 +187,7 @@
                 window.location.href = "/SignUp";
             } else {
                 const errorMessage = await response.text();
-                console.error('Errore nel logout:', errorMessage);
+                        console.error('Error logging out:', errorMessage);
             }
         }
 
@@ -181,7 +197,7 @@
 
             if (!response.ok) {
                 const errorMessage = await response.text();
-                console.error('Errore nella richiesta API:', errorMessage);
+                console.error('Error in API request:', errorMessage);
                 return;
             }
 
@@ -198,7 +214,7 @@
                         <td><button onclick="viewAuthor('${book.authorCF}')">${book.authorCF}</button></td>
                         <td>${book.isbn}</td>
                         <td>
-                            <button onclick="borrowBook('${book.isbn}', '${book.title}', '${book.genre}')">Prendi in prestito</button>
+                            <button onclick="borrowBook('${book.isbn}', '${book.title}', '${book.genre}')">Borrow</button>
                         </td>
                     `;
                     tableBody.appendChild(row);
@@ -247,12 +263,12 @@
                     method: 'PUT'
                 });
 
-                alert('Libro preso in prestito con successo!');
+                        alert('Book borrowed successfully!');
                 loadBooks();  // Ricarica la lista dei libri disponibili
                 loadLoanedBooks();  // Ricarica la lista dei libri presi in prestito
             } else {
                 const errorMessage = await response.text();
-                console.error('Errore nella prenotazione del libro:', errorMessage);
+                        console.error('Error booking the book:', errorMessage);
             }
         }
 
@@ -268,12 +284,12 @@
                     method: 'PUT'
                 });
 
-                alert('Libro restituito con successo!');
+                alert('Book returned successfully!');
                 loadBooks();  // Ricarica la lista dei libri disponibili
                 loadLoanedBooks();  // Ricarica la lista dei libri presi in prestito
             } else {
                 const errorMessage = await response.text();
-                console.error('Errore nella restituzione del libro:', errorMessage);
+                console.error('Error returning the book:', errorMessage);
             }
         }
 
@@ -285,7 +301,7 @@
 
             if (!response.ok) {
                 const errorMessage = await response.text();
-                console.error('Errore nel caricamento dei libri presi in prestito:', errorMessage);
+                console.error('Error loading borrowed books:', errorMessage);
                 return;
             }
 
@@ -301,13 +317,13 @@
                 let alertClass = '';
 
                 if (daysRemaining < 0) {
-                    alertMessage = 'Scaduto, riconsegnalo al più presto';
+                    alertMessage = 'Expired, return it as soon as possible';
                     alertClass = 'alert-red';
                 } else if (daysRemaining < 7) {
-                    alertMessage = 'In scadenza a breve';
-                    alertClass = 'alert-red';
+                    alertMessage = 'Expiring soon';
+                    alertClass = 'alert-orange';
                 } else {
-                    alertMessage = 'Nessun avviso';
+                    alertMessage = 'No warnings';
                     alertClass = 'alert-green';
                 }
 
@@ -317,10 +333,10 @@
                     <td>${new Date(loan.startDate).toLocaleDateString()}</td>
                     <td>${new Date(loan.endDate).toLocaleDateString()}</td>
                     <td>
-                        <button class="return-button" onclick="returnBook(${loan.id}, ${loan.bookISBN})">Restituisci</button>
+                        <button class="return-button" onclick="returnBook(${loan.id}, ${loan.bookISBN})">Give back</button>
                     </td>
                     <td>
-                        <button onclick="viewBookDetails('${loan.bookISBN}')">Visualizza Dettagli</button>
+                        <button onclick="viewBookDetails('${loan.bookISBN}')">Show details</button>
                     </td>
                     <td>${daysRemaining >= 0 ? daysRemaining + ' days' : ''}</td>
                     <td class="${alertClass}">${alertMessage}</td>

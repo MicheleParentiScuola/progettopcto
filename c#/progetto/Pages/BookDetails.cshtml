@@ -1,10 +1,10 @@
 ﻿@page
 @model BookDetailsModel
 @{
-    ViewData["Title"] = "Dettagli Libro";
+    ViewData["Title"] = "Book details";
 }
 
-<h1>Dettagli Libro</h1>
+<h1 class="text-center">Book details</h1>
 
 <!-- I dettagli del libro verranno caricati dinamicamente qui -->
 <div id="bookDetails">
@@ -12,7 +12,7 @@
 </div>
 
 
-<button onclick="goBack()">Torna indietro</button>
+<button onclick="goBack()">Go back</button>
 
 
 <script>
@@ -45,10 +45,10 @@
 
             // Aggiorna la pagina con i dettagli del libro e dell'autore
             document.getElementById('bookDetails').innerHTML = `
-                <h2>ISBN: ${book.isbn}</h2>
-                <p><strong>Titolo:</strong> ${book.title}</p>
-                <p><strong>Autore:</strong> ${author.name} ${author.surname}</p>
-                <p><strong>Genere:</strong> ${book.genre}</p>
+                <h3 class="text-center">ISBN: ${book.isbn}</h3>
+                <p><strong>Title:</strong> ${book.title}</p>
+                <p><strong>Author:</strong> ${author.name} ${author.surname}</p>
+                <p><strong>Genre:</strong> ${book.genre}</p>
                 <!-- Puoi aggiungere altri dettagli qui -->
             `;
         } catch (error) {
