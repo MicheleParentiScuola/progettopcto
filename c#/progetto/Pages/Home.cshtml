@@ -10,15 +10,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
-        <style>
-            .center-content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                height: 100vh;
-                text-align: center;
-            }
+    <style>
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
 
             .center-content a {
                 padding: 10px 20px;
@@ -29,98 +29,98 @@
                 font-size: 18px;
             }
 
-            .center-content a:hover {
-                background-color: #45a049;
-            }
+                .center-content a:hover {
+                    background-color: #45a049;
+                }
 
-            .button {
-                padding: 10px 20px;
-                background-color: #007bff;
-                color: white;
-                text-decoration: none;
-                border-radius: 5px;
-                font-size: 18px;
-            }
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
 
             .button:hover {
                 background-color: #0056b3;
             }
 
-            table {
-                width: 100%;
-                margin-top: 20px;
-                border-collapse: collapse;
-            }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
 
-            th, td {
-                padding: 10px;
-                text-align: left;
-                border-bottom: 1px solid #ddd;
-            }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
 
-            th {
-                background-color: #f2f2f2;
-            }
+        th {
+            background-color: #f2f2f2;
+        }
 
-            .loaned-books {
-                margin-top: 30px;
-                padding: 10px;
-                background-color: #f1f1f1;
-                border-radius: 5px;
-            }
+        .loaned-books {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
 
             .loaned-books table {
                 width: 100%;
             }
 
-            .return-button {
-                background-color: red;
-                color: white;
-                border: none;
-                padding: 5px 10px;
-                cursor: pointer;
-                border-radius: 4px;
-            }
+        .return-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
 
-            .details-button {
-                background-color: green;
-                color: white;
-                border: none;
-                padding: 5px 10px;
-                cursor: pointer;
-                border-radius: 4px;
-            }
+        .details-button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
 
-            .return-button:hover {
-                background-color: darkred;
-            }
+        .return-button:hover {
+            background-color: darkred;
+        }
 
-            .alert-red {
-                color: red !important;
-                accent-color: red;
-                font-weight: bold;
-            }
+        .alert-red {
+            color: red !important;
+            accent-color: red;
+            font-weight: bold;
+        }
 
-            .alert-green {
-                color: green !important;
-                accent-color: green;
-                font-weight: bold;
-            }
+        .alert-green {
+            color: green !important;
+            accent-color: green;
+            font-weight: bold;
+        }
 
-            .alert-orange {
-                color: darkorange !important;
-                accent-color: darkorange;
-                font-weight: bold;
-            }
+        .alert-orange {
+            color: darkorange !important;
+            accent-color: darkorange;
+            font-weight: bold;
+        }
 
-            .logo-button {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                cursor: pointer;
-            }
+        .logo-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
 
-            .logout-div {
+        .logout-div {
             display: none;
             position: absolute;
             top: 70px; /* Spostato leggermente più in basso */
@@ -130,265 +130,266 @@
             padding: 8px; /* Dimensione leggermente diminuita */
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-        </style>
-    </head>
-    <body>
+        }
+    </style>
+</head>
+<body>
 
-        <div>
-            @if (HttpContext.Session.GetString("UserName") != null)
-            {
-                <div class="logo-button" onclick="toggleLogoutDiv()">
-                    <img src="~/logout_finale.png" alt="Logo" width="90" height="50" />
-                </div>
-                <div id="logoutDiv" class="logout-div">
-                    <button type="submit" onclick="logout()">Logout</button>
-                </div>
-                <h2 style="text-align: center">Welcome @HttpContext.Session.GetString("UserName") @HttpContext.Session.GetString("UserSurname")</h2>
-                <br>
+    <div>
+        @if (HttpContext.Session.GetString("UserName") != null)
+        {
+            <div class="logo-button" onclick="toggleLogoutDiv()">
+                <img src="~/logout_finale.png" alt="Logo" width="90" height="50" />
+            </div>
+            <div id="logoutDiv" class="logout-div">
+                <button type="submit" onclick="logout()">Logout</button>
+            </div>
+            <h2 style="text-align: center">Welcome @HttpContext.Session.GetString("UserName") @HttpContext.Session.GetString("UserSurname")</h2>
+            <br>
 
-                <h3>Books available for loan:</h3>
+            <h3>Books available for loan:</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="booksTableBody">
+                </tbody>
+            </table>
+
+            <div class="loaned-books">
+                <h3>Your borrowed books</h3>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Title</th>
-                            <th>Genre</th>
-                            <th>Author</th>
                             <th>ISBN</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
                             <th>Action</th>
+                            <th>Details</th>
+                            <th>Time Remaining</th>
+                            <th>Alerts</th>
                         </tr>
                     </thead>
-                    <tbody id="booksTableBody">
+                    <tbody id="loanedBooksTableBody">
                     </tbody>
                 </table>
+            </div>
+            <br />
+            <br />
+        }
+        else
+        {
+            <div class="center-content">
+                <p>Login non effettuato</p>
+                <a href="/SignUp">Accedi</a>
+            </div>
+        }
+    </div>
 
-                <div class="loaned-books">
-                    <h3>Your borrowed books</h3>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>ISBN</th>
-                                <th>Start Date</th>
-                                <th>End Date</th>
-                                <th>Action</th>
-                                <th>Details</th>
-                                <th>Time Remaining</th>
-                                <th>Alerts</th>
-                            </tr>
-                        </thead>
-                        <tbody id="loanedBooksTableBody">
-                        </tbody>
-                    </table>
-                </div>
-                <br />
-                <br />
-            }
-            else
-            {
-                <div class="center-content">
-                    <p>Login non effettuato</p>
-                    <a href="/SignUp">Accedi</a>
-                </div>
-            }
-        </div>
+    <script>
+        // Aggiungi questo JavaScript a wwwroot/js/site.js
 
-        <script>
-            // Aggiungi questo JavaScript a wwwroot/js/site.js
-
-            // Funzione per eseguire il logout e rimuovere la sessione
-            async function logout() {
-                const response = await fetch('/api/user/logout', {
-                    method: 'POST'
-                });
-
-                if (response.ok) {
-                    sessionStorage.removeItem("UserName");
-                    sessionStorage.removeItem("UserSurname");
-                    sessionStorage.removeItem("UserCF");
-                    window.location.href = "/SignUp";
-                } else {
-                    const errorMessage = await response.text();
-                    console.error('Error logging out:', errorMessage);
-                }
-            }
-
-            // Funzione per caricare i libri disponibili
-            async function loadBooks() {
-                const response = await fetch('/api/book/all');
-
-                if (!response.ok) {
-                    const errorMessage = await response.text();
-                    console.error('Error in API request:', errorMessage);
-                    return;
-                }
-
-                const books = await response.json();
-                const tableBody = document.getElementById('booksTableBody');
-                tableBody.innerHTML = '';
-
-                books.forEach(book => {
-                    if (!book.isBooked) {
-                        const row = document.createElement('tr');
-                        row.innerHTML = `
-                            <td>${book.title}</td>
-                            <td>${book.genre}</td>
-                            <td><button onclick="viewAuthor('${book.authorCF}')">${book.authorCF}</button></td>
-                            <td>${book.isbn}</td>
-                            <td>
-                                <button onclick="borrowBook('${book.isbn}', '${book.title}', '${book.genre}')">Borrow</button>
-                            </td>
-                        `;
-                        tableBody.appendChild(row);
-                    }
-                });
-            }
-
-            // Funzione per visualizzare le informazioni dell'autore
-            async function viewAuthor(authorCF) {
-                const response = await fetch(`/api/author/${authorCF}`);
-
-                if (!response.ok) {
-                    const errorMessage = await response.text();
-                    console.error('Errore nella richiesta API:', errorMessage);
-                    return;
-                }
-
-                const author = await response.json();
-                console.error(author);
-                // Reindirizza alla pagina di visualizzazione dell'autore con le informazioni dell'autore
-                window.location.href = `/AuthorDetails?cf=${authorCF}`;
-            }
-
-            // Funzione per prenotare un libro
-            async function borrowBook(isbn, title, genre) {
-                const userCF = '@HttpContext.Session.GetString("UserCF")'; // Esegui il recupero del codice fiscale dell'utente
-
-                const loanData = {
-                    bookISBN: isbn,
-                    userCF: userCF,
-                    startDate: new Date().toISOString(),
-                    endDate: new Date(new Date().setDate(new Date().getDate() + 30)).toISOString() // Prestito di 30 giorni
-                };
-
-                const response = await fetch('/api/loan', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(loanData)
-                });
-
-                if (response.ok) {
-                    // Aggiorna lo stato del libro a "IsBooked = true"
-                    await fetch(`/api/book/borrow/${isbn}`, {
-                        method: 'PUT'
-                    });
-
-                    alert('Book borrowed successfully!');
-                    loadBooks();  // Ricarica la lista dei libri disponibili
-                    loadLoanedBooks();  // Ricarica la lista dei libri presi in prestito
-                } else {
-                    const errorMessage = await response.text();
-                    console.error('Error booking the book:', errorMessage);
-                }
-            }
-
-            // Funzione per restituire un libro
-            async function returnBook(loanId, isbn) {
-                const response = await fetch(`/api/loan/${loanId}`, {
-                    method: 'DELETE'
-                });
-
-                if (response.ok) {
-                    // Aggiorna lo stato del libro a "IsBooked = false"
-                    await fetch(`/api/book/return/${isbn}`, {
-                        method: 'PUT'
-                    });
-
-                    alert('Book returned successfully!');
-                    loadBooks();  // Ricarica la lista dei libri disponibili
-                    loadLoanedBooks();  // Ricarica la lista dei libri presi in prestito
-                } else {
-                    const errorMessage = await response.text();
-                    console.error('Error returning the book:', errorMessage);
-                }
-            }
-
-            // Funzione per caricare i libri presi in prestito
-            async function loadLoanedBooks() {
-                const userCF = '@HttpContext.Session.GetString("UserCF")'; // Recupera il codice fiscale dell'utente
-
-                const response = await fetch(`/api/loan/search?userCF=${userCF}`);
-
-                if (!response.ok) {
-                    const errorMessage = await response.text();
-                    console.error('Error loading borrowed books:', errorMessage);
-                    return;
-                }
-
-                const loans = await response.json();
-                const tableBody = document.getElementById('loanedBooksTableBody');
-                tableBody.innerHTML = '';
-
-                loans.forEach(loan => {
-                    const endDate = new Date(loan.endDate);
-                    const currentDate = new Date();
-                    const daysRemaining = Math.ceil((endDate - currentDate) / (1000 * 60 * 60 * 24));
-                    let alertMessage = '';
-                    let alertClass = '';
-
-                    if (daysRemaining < 0) {
-                        alertMessage = 'Expired, return it as soon as possible';
-                        alertClass = 'alert-red';
-                    } else if (daysRemaining < 7) {
-                        alertMessage = 'Expiring soon';
-                        alertClass = 'alert-orange';
-                    } else {
-                        alertMessage = 'No warnings';
-                        alertClass = 'alert-green';
-                    }
-
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                        <td>${loan.bookISBN}</td>
-                        <td>${new Date(loan.startDate).toLocaleDateString()}</td>
-                        <td>${new Date(loan.endDate).toLocaleDateString()}</td>
-                        <td>
-                            <button class="return-button" onclick="returnBook(${loan.id}, ${loan.bookISBN})">Give back</button>
-                        </td>
-                        <td>
-                            <button onclick="viewBookDetails('${loan.bookISBN}')">Show details</button>
-                        </td>
-                        <td>${daysRemaining >= 0 ? daysRemaining + ' days' : ''}</td>
-                        <td class="${alertClass}">${alertMessage}</td>
-                    `;
-                    tableBody.appendChild(row);
-                });
-            }
-
-            // Funzione per visualizzare i dettagli del libro
-            async function viewBookDetails(isbn) {
-                window.location.href = `/BookDetails?isbn=${isbn}`;
-            }
-
-            // Funzione per mostrare/nascondere il div di logout
-            function toggleLogoutDiv() {
-                const logoutDiv = document.getElementById('logoutDiv');
-                if (logoutDiv.style.display === 'none' || logoutDiv.style.display === '') {
-                    logoutDiv.style.display = 'block';
-                } else {
-                    logoutDiv.style.display = 'none';
-                }
-            }
-
-            // Carica i libri quando la pagina è pronta
-            document.addEventListener('DOMContentLoaded', function () {
-                loadBooks();
-                loadLoanedBooks();
+        // Funzione per eseguire il logout e rimuovere la sessione
+        async function logout() {
+            const response = await fetch('/api/user/logout', {
+                method: 'POST'
             });
 
-        </script>
+            if (response.ok) {
+                sessionStorage.removeItem("UserName");
+                sessionStorage.removeItem("UserSurname");
+                sessionStorage.removeItem("UserCF");
+                window.location.reload(); // Reindirizza alla pagina di login dopo un breve ritardo
+                setTimeout(() => { window.location.href = "/SignUp"; }, 100);
+            } else {
+                const errorMessage = await response.text();
+                console.error('Error logging out:', errorMessage);
+            }
+        }
 
-    </body>
-    </html>
+        // Funzione per caricare i libri disponibili
+        async function loadBooks() {
+            const response = await fetch('/api/book/all');
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                console.error('Error in API request:', errorMessage);
+                return;
+            }
+
+            const books = await response.json();
+            const tableBody = document.getElementById('booksTableBody');
+            tableBody.innerHTML = '';
+
+            books.forEach(book => {
+                if (!book.isBooked) {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${book.title}</td>
+                        <td>${book.genre}</td>
+                        <td><button onclick="viewAuthor('${book.authorCF}')">${book.authorCF}</button></td>
+                        <td>${book.isbn}</td>
+                        <td>
+                            <button onclick="borrowBook('${book.isbn}', '${book.title}', '${book.genre}')">Borrow</button>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                }
+            });
+        }
+
+        // Funzione per visualizzare le informazioni dell'autore
+        async function viewAuthor(authorCF) {
+            const response = await fetch(`/api/author/${authorCF}`);
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                console.error('Errore nella richiesta API:', errorMessage);
+                return;
+            }
+
+            const author = await response.json();
+            console.error(author);
+            // Reindirizza alla pagina di visualizzazione dell'autore con le informazioni dell'autore
+            window.location.href = `/AuthorDetails?cf=${authorCF}`;
+        }
+
+        // Funzione per prenotare un libro
+        async function borrowBook(isbn, title, genre) {
+            const userCF = '@HttpContext.Session.GetString("UserCF")'; // Esegui il recupero del codice fiscale dell'utente
+
+            const loanData = {
+                bookISBN: isbn,
+                userCF: userCF,
+                startDate: new Date().toISOString(),
+                endDate: new Date(new Date().setDate(new Date().getDate() + 30)).toISOString() // Prestito di 30 giorni
+            };
+
+            const response = await fetch('/api/loan', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(loanData)
+            });
+
+            if (response.ok) {
+                // Aggiorna lo stato del libro a "IsBooked = true"
+                await fetch(`/api/book/borrow/${isbn}`, {
+                    method: 'PUT'
+                });
+
+                alert('Book borrowed successfully!');
+                loadBooks();  // Ricarica la lista dei libri disponibili
+                loadLoanedBooks();  // Ricarica la lista dei libri presi in prestito
+            } else {
+                const errorMessage = await response.text();
+                console.error('Error booking the book:', errorMessage);
+            }
+        }
+
+        // Funzione per restituire un libro
+        async function returnBook(loanId, isbn) {
+            const response = await fetch(`/api/loan/${loanId}`, {
+                method: 'DELETE'
+            });
+
+            if (response.ok) {
+                // Aggiorna lo stato del libro a "IsBooked = false"
+                await fetch(`/api/book/return/${isbn}`, {
+                    method: 'PUT'
+                });
+
+                alert('Book returned successfully!');
+                loadBooks();  // Ricarica la lista dei libri disponibili
+                loadLoanedBooks();  // Ricarica la lista dei libri presi in prestito
+            } else {
+                const errorMessage = await response.text();
+                console.error('Error returning the book:', errorMessage);
+            }
+        }
+
+        // Funzione per caricare i libri presi in prestito
+        async function loadLoanedBooks() {
+            const userCF = '@HttpContext.Session.GetString("UserCF")'; // Recupera il codice fiscale dell'utente
+
+            const response = await fetch(`/api/loan/search?userCF=${userCF}`);
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                console.error('Error loading borrowed books:', errorMessage);
+                return;
+            }
+
+            const loans = await response.json();
+            const tableBody = document.getElementById('loanedBooksTableBody');
+            tableBody.innerHTML = '';
+
+            loans.forEach(loan => {
+                const endDate = new Date(loan.endDate);
+                const currentDate = new Date();
+                const daysRemaining = Math.ceil((endDate - currentDate) / (1000 * 60 * 60 * 24));
+                let alertMessage = '';
+                let alertClass = '';
+
+                if (daysRemaining < 0) {
+                    alertMessage = 'Expired, return it as soon as possible';
+                    alertClass = 'alert-red';
+                } else if (daysRemaining < 7) {
+                    alertMessage = 'Expiring soon';
+                    alertClass = 'alert-orange';
+                } else {
+                    alertMessage = 'No warnings';
+                    alertClass = 'alert-green';
+                }
+
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${loan.bookISBN}</td>
+                    <td>${new Date(loan.startDate).toLocaleDateString()}</td>
+                    <td>${new Date(loan.endDate).toLocaleDateString()}</td>
+                    <td>
+                        <button class="return-button" onclick="returnBook(${loan.id}, ${loan.bookISBN})">Give back</button>
+                    </td>
+                    <td>
+                        <button onclick="viewBookDetails('${loan.bookISBN}')">Show details</button>
+                    </td>
+                    <td>${daysRemaining >= 0 ? daysRemaining + ' days' : ''}</td>
+                    <td class="${alertClass}">${alertMessage}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Funzione per visualizzare i dettagli del libro
+        async function viewBookDetails(isbn) {
+            window.location.href = `/BookDetails?isbn=${isbn}`;
+        }
+
+        // Funzione per mostrare/nascondere il div di logout
+        function toggleLogoutDiv() {
+            const logoutDiv = document.getElementById('logoutDiv');
+            if (logoutDiv.style.display === 'none' || logoutDiv.style.display === '') {
+                logoutDiv.style.display = 'block';
+            } else {
+                logoutDiv.style.display = 'none';
+            }
+        }
+
+        // Carica i libri quando la pagina è pronta
+        document.addEventListener('DOMContentLoaded', function () {
+            loadBooks();
+            loadLoanedBooks();
+        });
+
+    </script>
+
+</body>
+</html>
 
