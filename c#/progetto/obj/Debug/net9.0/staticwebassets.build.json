@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AIMmVNJ0ovafqbkvwunJYfd1pRMc9O7Stb7umzop5hU=",
+  "Hash": "mnUH/odipWD+s7Prwdp6cqLdzIDP1XyjSzCqocjZu08=",
   "Source": "progetto",
   "BasePath": "_content/progetto",
   "Mode": "Default",
@@ -2745,6 +2745,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\logo_bookcase.png"
+    },
+    {
+      "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\logout_2.png",
+      "SourceId": "progetto",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\",
+      "BasePath": "_content/progetto",
+      "RelativePath": "logout_2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5fhmvyxyx7",
+      "Integrity": "TyfJE7WkCvngYN4i6lo8jCLfVvQnPGLpUvIWu9lBQOg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logout_2.png"
+    },
+    {
+      "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\logout_finale.png",
+      "SourceId": "progetto",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\",
+      "BasePath": "_content/progetto",
+      "RelativePath": "logout_finale#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8pbs5mwzo6",
+      "Integrity": "PCfDlSlbrLNshQQAGEc+R1/MPbF1NzViPlByFwdV458=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logout_finale.png"
     },
     {
       "Identity": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\sfondo.gif",
@@ -21427,6 +21469,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-/XHW1ZSbaZMLkFeuhCeQkQlsdZUN2m6F6E1k2RUGM0Q="
+        }
+      ]
+    },
+    {
+      "Route": "logout_2.5fhmvyxyx7.png",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\logout_2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144951"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TyfJE7WkCvngYN4i6lo8jCLfVvQnPGLpUvIWu9lBQOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 13:59:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5fhmvyxyx7"
+        },
+        {
+          "Name": "label",
+          "Value": "logout_2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TyfJE7WkCvngYN4i6lo8jCLfVvQnPGLpUvIWu9lBQOg="
+        }
+      ]
+    },
+    {
+      "Route": "logout_2.png",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\logout_2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144951"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TyfJE7WkCvngYN4i6lo8jCLfVvQnPGLpUvIWu9lBQOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 13:59:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TyfJE7WkCvngYN4i6lo8jCLfVvQnPGLpUvIWu9lBQOg="
+        }
+      ]
+    },
+    {
+      "Route": "logout_finale.8pbs5mwzo6.png",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\logout_finale.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PCfDlSlbrLNshQQAGEc+R1/MPbF1NzViPlByFwdV458=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 14:03:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8pbs5mwzo6"
+        },
+        {
+          "Name": "label",
+          "Value": "logout_finale.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PCfDlSlbrLNshQQAGEc+R1/MPbF1NzViPlByFwdV458="
+        }
+      ]
+    },
+    {
+      "Route": "logout_finale.png",
+      "AssetFile": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\logout_finale.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PCfDlSlbrLNshQQAGEc+R1/MPbF1NzViPlByFwdV458=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 14:03:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PCfDlSlbrLNshQQAGEc+R1/MPbF1NzViPlByFwdV458="
         }
       ]
     },

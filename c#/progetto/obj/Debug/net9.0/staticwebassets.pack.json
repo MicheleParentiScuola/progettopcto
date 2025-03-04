@@ -261,6 +261,14 @@
       "PackagePath": "staticwebassets\\logo_bookcase.png"
     },
     {
+      "Id": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\logout_2.png",
+      "PackagePath": "staticwebassets\\logout_2.png"
+    },
+    {
+      "Id": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\logout_finale.png",
+      "PackagePath": "staticwebassets\\logout_finale.png"
+    },
+    {
       "Id": "C:\\Users\\AdminPC\\Desktop\\progettopcto\\c#\\progetto\\wwwroot\\sfondo.gif",
       "PackagePath": "staticwebassets\\sfondo.gif"
     },

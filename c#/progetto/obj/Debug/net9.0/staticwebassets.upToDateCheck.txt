@@ -124,5 +124,7 @@ wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\logo_bookcase.png
+wwwroot\logout_2.png
+wwwroot\logout_finale.png
 wwwroot\sfondo.gif
 wwwroot\sfondo_2.gif
