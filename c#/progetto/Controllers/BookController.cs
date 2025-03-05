@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using progettopcto.Data;
 using progettopcto.DTO;
-using System.Collections.Generic;
-using System.Linq;
+
 
 namespace progetto.Controllers
 {
@@ -19,11 +18,13 @@ namespace progetto.Controllers
             _mapper = mapper;
         }
 
+        /*
         [HttpGet("test")]
         public IActionResult Test()
         {
             return Ok("Il controller funziona!");
         }
+        */
 
         [HttpGet]
         public IActionResult GetAll()
@@ -83,6 +84,7 @@ namespace progetto.Controllers
             _ctx.SaveChanges();
             return NoContent();
         }
+
         [HttpPut("return/{isbn}")]
         public IActionResult ReturnBook(int isbn)
         {
@@ -96,6 +98,7 @@ namespace progetto.Controllers
             _ctx.SaveChanges();
             return NoContent();
         }
+
         [HttpDelete("{isbn}")]
         public IActionResult Delete(int isbn)
         {
@@ -108,6 +111,7 @@ namespace progetto.Controllers
             _ctx.SaveChanges();
             return NoContent();
         }
+
         [HttpPut("borrow/{isbn}")]
         public IActionResult BorrowBook(int isbn)
         {
@@ -144,6 +148,14 @@ namespace progetto.Controllers
 
             var result = query.ToList().ConvertAll(_mapper.MapEntityToDto);
             return Ok(result);
+        }
+
+        [HttpGet("genre/{genre}")]
+        public IActionResult GetByGenre(string genre)
+        {
+            var books = _ctx.Books.Where(b => b.Genre == genre).ToList();
+            var bookDtos = books.ConvertAll(_mapper.MapEntityToDto);
+            return Ok(bookDtos);
         }
 
         [HttpGet("all")]

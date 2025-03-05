@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace progettopcto.Data
@@ -18,8 +12,6 @@ namespace progettopcto.Data
         public required string AuthorCF { get; set; }
 
         public required Boolean IsBooked {  get; set; }
-
-
 
         [ForeignKey(nameof(AuthorCF))]
         public Author? Author { get; set; }

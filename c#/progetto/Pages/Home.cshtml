@@ -146,7 +146,23 @@
             </div>
             <h2 style="text-align: center">Welcome @HttpContext.Session.GetString("UserName") @HttpContext.Session.GetString("UserSurname")</h2>
             <br>
+            <div>
+                <label for="genreFilter">Filter by Genre:</label>
+                <select id="genreFilter" onchange="filterBooksByGenre()">
+                    <option value="">All</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Storico">Storico</option>
+                    <option value="Classico">Classico</option>
+                    <option value="Distopico">Distopico</option>
+                    <option value="Fiaba">Fiaba</option>
+                    <option value="Avventura">Avventura</option>
+                    <option value="Romantico">Romantico</option>
+                </select>
 
+            </div>
+
+            <br />
             <h3>Books available for loan:</h3>
             <table class="table">
                 <thead>
@@ -380,6 +396,42 @@
             } else {
                 logoutDiv.style.display = 'none';
             }
+        }
+
+        async function filterBooksByGenre() {
+            const genre = document.getElementById('genreFilter').value;
+            let url = '/api/book/all';
+            if (genre) {
+                url = `/api/book/genre/${genre}`;
+            }
+
+            const response = await fetch(url);
+
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                console.error('Error in API request:', errorMessage);
+                return;
+            }
+
+            const books = await response.json();
+            const tableBody = document.getElementById('booksTableBody');
+            tableBody.innerHTML = '';
+
+            books.forEach(book => {
+                if (!book.isBooked) {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${book.title}</td>
+                        <td>${book.genre}</td>
+                        <td><button onclick="viewAuthor('${book.authorCF}')">${book.authorCF}</button></td>
+                        <td>${book.isbn}</td>
+                        <td>
+                            <button onclick="borrowBook('${book.isbn}', '${book.title}', '${book.genre}')">Borrow</button>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                }
+            });
         }
 
         // Carica i libri quando la pagina è pronta

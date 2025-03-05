@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using progettopcto.Data;
 using progettopcto.DTO;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.Json;
 
 namespace progetto.Controllers
@@ -54,14 +52,13 @@ namespace progetto.Controllers
                 return Conflict("User with this address already exists.");
             }
 
-            // Aggiungi un nuovo utente
             var user = new User
             {
                 CF = userDto.CF,
                 Name = userDto.Name,
                 Surname = userDto.Surname,
                 Address = userDto.Address,
-                Password = userDto.Password // Aggiungi logica di hashing della password
+                Password = userDto.Password 
             };
 
             _ctx.Users.Add(user);
@@ -81,7 +78,7 @@ namespace progetto.Controllers
                 return Unauthorized("Utente non trovato.");
             }
 
-            if (user.Password != password) // Verifica la password (si consiglia di usare hashing)
+            if (user.Password != password)
             {
                 return Unauthorized("Password errata.");
             }
@@ -97,7 +94,6 @@ namespace progetto.Controllers
             HttpContext.Session.Clear();
             return Ok();
         }
-
 
         [HttpPut("{cf}")]
         public IActionResult Update(string cf, [FromBody] UserDTO userDto)

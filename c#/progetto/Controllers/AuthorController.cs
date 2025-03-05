@@ -2,8 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using progettopcto.Data;
 using progettopcto.DTO;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace progetto.Controllers
 {
@@ -19,6 +17,7 @@ namespace progetto.Controllers
             _ctx = ctx;
             _mapper = mapper;
         }
+
         [HttpGet("api/author/{cf}")]
         public async Task<ActionResult<AuthorDTO>> GetAuthor(string cf)
         {
@@ -31,12 +30,10 @@ namespace progetto.Controllers
                     Surname = a.Surname
                 })
                 .FirstOrDefaultAsync();
-
             if (author == null)
             {
                 return NotFound();
             }
-
             return Ok(author);
         }
 
@@ -59,7 +56,6 @@ namespace progetto.Controllers
             var authorDto = _mapper.MapEntityToDto(author);
             return Ok(authorDto);
         }
-
 
         [HttpPost]
         public IActionResult Create([FromBody] AuthorDTO authorDto)

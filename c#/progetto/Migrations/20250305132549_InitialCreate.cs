@@ -96,11 +96,16 @@ namespace progetto.Migrations
                 columns: new[] { "CF", "Name", "Surname" },
                 values: new object[,]
                 {
-                    { "A1", "Author1", "Surname1" },
-                    { "A2", "Author2", "Surname2" },
-                    { "A3", "Author3", "Surname3" },
-                    { "A4", "Author4", "Surname4" },
-                    { "A5", "Author5", "Surname5" }
+                    { "CF001", "Mario", "Rossi" },
+                    { "CF002", "Luigi", "Verdi" },
+                    { "CF003", "Giovanni", "Bianchi" },
+                    { "CF004", "Paolo", "Neri" },
+                    { "CF005", "Francesca", "Gialli" },
+                    { "CF006", "Anna", "Blu" },
+                    { "CF007", "Marco", "Giallo" },
+                    { "CF008", "Luca", "Viola" },
+                    { "CF009", "Sara", "Rosa" },
+                    { "CF010", "Elena", "Marrone" }
                 });
 
             migrationBuilder.InsertData(
@@ -108,11 +113,16 @@ namespace progetto.Migrations
                 columns: new[] { "CF", "Address", "Name", "Password", "Surname" },
                 values: new object[,]
                 {
-                    { "U1", "Address1", "User1", "Password01!", "Surname1" },
-                    { "U2", "Address2", "User2", "Password01!", "Surname2" },
-                    { "U3", "Address3", "User3", "Password01!", "Surname3" },
-                    { "U4", "Address4", "User4", "Password01!", "Surname4" },
-                    { "U5", "Address5", "User5", "Password01!", "Surname5" }
+                    { "USER001", "anna.rossi@example.com", "Anna", "Password01!", "Rossi" },
+                    { "USER002", "marco.verdi@example.com", "Marco", "Password01!", "Verdi" },
+                    { "USER003", "luca.bianchi@example.com", "Luca", "Password01!", "Bianchi" },
+                    { "USER004", "sara.neri@example.com", "Sara", "Password01!", "Neri" },
+                    { "USER005", "elena.gialli@example.com", "Elena", "Password01!", "Gialli" },
+                    { "USER006", "giulia.blu@example.com", "Giulia", "Password01!", "Blu" },
+                    { "USER007", "davide.giallo@example.com", "Davide", "Password01!", "Giallo" },
+                    { "USER008", "matteo.viola@example.com", "Matteo", "Password01!", "Viola" },
+                    { "USER009", "chiara.rosa@example.com", "Chiara", "Password01!", "Rosa" },
+                    { "USER010", "federico.marrone@example.com", "Federico", "Password01!", "Marrone" }
                 });
 
             migrationBuilder.InsertData(
@@ -120,11 +130,16 @@ namespace progetto.Migrations
                 columns: new[] { "ISBN", "AuthorCF", "Genre", "IsBooked", "Title" },
                 values: new object[,]
                 {
-                    { 1, "A1", "Genre1", true, "Book1" },
-                    { 2, "A2", "Genre2", false, "Book2" },
-                    { 3, "A3", "Genre3", false, "Book3" },
-                    { 4, "A4", "Genre4", false, "Book4" },
-                    { 5, "A5", "Genre5", false, "Book5" }
+                    { 1001, "CF001", "Fantasy", false, "Il Signore degli Anelli" },
+                    { 1002, "CF002", "Fantasy", false, "Harry Potter" },
+                    { 1003, "CF003", "Thriller", false, "Il Codice Da Vinci" },
+                    { 1004, "CF004", "Storico", false, "Il Nome della Rosa" },
+                    { 1005, "CF005", "Classico", false, "La Divina Commedia" },
+                    { 1006, "CF006", "Distopico", false, "1984" },
+                    { 1007, "CF007", "Fiaba", false, "Il Piccolo Principe" },
+                    { 1008, "CF008", "Avventura", false, "Moby Dick" },
+                    { 1009, "CF009", "Romantico", false, "Orgoglio e Pregiudizio" },
+                    { 1010, "CF010", "Storico", false, "Guerra e Pace" }
                 });
 
             migrationBuilder.InsertData(
@@ -132,11 +147,16 @@ namespace progetto.Migrations
                 columns: new[] { "Id", "BookISBN", "EndDate", "StartDate", "UserCF" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2025, 1, 11, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 22, 12, 0, 0, 0, DateTimeKind.Unspecified), "U1" },
-                    { 2, 2, new DateTime(2025, 1, 12, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 23, 12, 0, 0, 0, DateTimeKind.Unspecified), "U2" },
-                    { 3, 3, new DateTime(2025, 1, 13, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 24, 12, 0, 0, 0, DateTimeKind.Unspecified), "U3" },
-                    { 4, 4, new DateTime(2025, 1, 14, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 25, 12, 0, 0, 0, DateTimeKind.Unspecified), "U4" },
-                    { 5, 5, new DateTime(2025, 1, 15, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 26, 12, 0, 0, 0, DateTimeKind.Unspecified), "U5" }
+                    { 1, 1001, new DateTime(2025, 1, 11, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 22, 12, 0, 0, 0, DateTimeKind.Unspecified), "USER001" },
+                    { 2, 1002, new DateTime(2025, 1, 12, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 23, 12, 0, 0, 0, DateTimeKind.Unspecified), "USER002" },
+                    { 3, 1003, new DateTime(2025, 1, 13, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 24, 12, 0, 0, 0, DateTimeKind.Unspecified), "USER003" },
+                    { 4, 1004, new DateTime(2025, 1, 14, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 25, 12, 0, 0, 0, DateTimeKind.Unspecified), "USER004" },
+                    { 5, 1005, new DateTime(2025, 1, 15, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 26, 12, 0, 0, 0, DateTimeKind.Unspecified), "USER005" },
+                    { 6, 1006, new DateTime(2025, 1, 16, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 27, 12, 0, 0, 0, DateTimeKind.Unspecified), "USER006" },
+                    { 7, 1007, new DateTime(2025, 1, 17, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 28, 12, 0, 0, 0, DateTimeKind.Unspecified), "USER007" },
+                    { 8, 1008, new DateTime(2025, 1, 18, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 29, 12, 0, 0, 0, DateTimeKind.Unspecified), "USER008" },
+                    { 9, 1009, new DateTime(2025, 1, 19, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 30, 12, 0, 0, 0, DateTimeKind.Unspecified), "USER009" },
+                    { 10, 1010, new DateTime(2025, 1, 20, 12, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 31, 12, 0, 0, 0, DateTimeKind.Unspecified), "USER010" }
                 });
 
             migrationBuilder.CreateIndex(

@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using progettopcto.Data;
 using progettopcto.DTO;
-using System;
-using System.Linq;
-using Microsoft.AspNetCore.Http;
 
 namespace progetto.Controllers
 {
@@ -48,14 +45,12 @@ namespace progetto.Controllers
                 return BadRequest();
             }
 
-            // Verifica se l'utente esiste  
             var user = _ctx.Users.FirstOrDefault(u => u.CF == loanDto.UserCF);
             if (user == null)
             {
                 return BadRequest("User does not exist.");
             }
 
-            // Verifica se il libro esiste  
             var book = _ctx.Books.FirstOrDefault(b => b.ISBN == loanDto.BookISBN);
             if (book == null)
             {
@@ -67,8 +62,6 @@ namespace progetto.Controllers
             _ctx.SaveChanges();
             return CreatedAtAction(nameof(GetById), new { id = loan.Id }, loanDto);
         }
-
-
 
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] LoanDTO loanDto)
@@ -102,7 +95,7 @@ namespace progetto.Controllers
             var book = _ctx.Books.FirstOrDefault(b => b.ISBN == loan.BookISBN);
             if (book != null)
             {
-                book.IsBooked = false; // Rendi disponibile il libro di nuovo
+                book.IsBooked = false; 
             }
 
             _ctx.Loans.Remove(loan);
@@ -134,19 +127,15 @@ namespace progetto.Controllers
             return Ok(result);
         }
 
-
-        // Nuovo metodo per restituire i libri presi in prestito dall'utente
         [HttpGet("myloans")]
         public IActionResult GetMyLoans()
         {
-            // Recupera l'utente dalla sessione
             var userCF = HttpContext.Session.GetString("UserCF");
             if (string.IsNullOrEmpty(userCF))
             {
                 return Unauthorized("User is not logged in.");
             }
 
-            // Recupera i prestiti dell'utente
             var loans = _ctx.Loans
                 .Where(l => l.UserCF == userCF)
                 .Select(l => new
