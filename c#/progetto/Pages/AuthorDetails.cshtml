@@ -5,16 +5,22 @@
 }
 
 <div style="text-align: center;">
-    <h1>@ViewData["Title"]</h1>
+    <br /><h1>@ViewData["Title"]</h1><br />
 </div>
 
-<div id="authorDetails">
-    <p><strong>Tax code:</strong> <span id="authorCF"></span></p>
-    <p><strong>Name:</strong> <span id="authorName"></span></p>
-    <p><strong>Surname:</strong> <span id="authorSurname"></span></p>
-
-    <button onclick="goBack()">Go back</button>
+<div id="authorDetails" style="border: 1.5px solid darkgreen; border-radius: 10px; padding: 10px; font-family: 'Arial', sans-serif; background-color: #f9f9f9; width: 50%; margin: auto; transition: transform 0.3s;">
+    <br /><p style="font-size: 1.2em; color: #352421;"><strong>Tax code: </strong><span id="authorCF"></span></p>
+    <p style="font-size: 1.2em; color: #352421;"><strong>Name: </strong><span id="authorName"></span></p>
+    <p style="font-size: 1.2em; color: #352421;"><strong>Surname: </strong><span id="authorSurname"></span></p>
 </div>
+
+<style>
+    #authorDetails:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+<button onclick="goBack()" style="margin-top: 15px;">Go back</button>
 
 <script>
 

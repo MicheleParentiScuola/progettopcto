@@ -4,16 +4,41 @@
     ViewData["Title"] = "Book details";
 }
 
-<h1 class="text-center">Book details</h1>
+<br /><h1 class="text-center">Book details</h1><br />
 
 <!-- I dettagli del libro verranno caricati dinamicamente qui -->
-<div id="bookDetails">
+<div id="bookDetails" class="book-details">
     <p>Caricamento in corso...</p>
 </div>
 
-
 <button onclick="goBack()">Go back</button>
 
+<style>
+
+    .book-details {
+        font-family: 'Arial', sans-serif;
+        border: 1px solid #8FBC8F; /* Colore verdognolo */
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 20px auto;
+        transition: transform 0.3s; /* Aggiungi una transizione per l'ingrandimento */
+    }
+
+        .book-details:hover {
+            transform: scale(1.05); /* Ingrandisce leggermente il div al passaggio del mouse */
+        }
+
+        .book-details h3 {
+            color: #333;
+        }
+
+        .book-details p {
+            color: #555;
+        }
+</style>
 
 <script>
     function goBack() {
@@ -34,7 +59,7 @@
 
             const book = await response.json();
             console.error(book);
-
+            
             // Fai una richiesta API per ottenere i dettagli dell'autore
             const authorResponse = await fetch(`/api/author/${book.authorCF}`);
             if (!authorResponse.ok) {
@@ -43,8 +68,12 @@
 
             const author = await authorResponse.json();
 
+            // Svuota il contenitore prima di aggiungere il nuovo contenuto
+            const bookDetailsContainer = document.getElementById('bookDetails');
+            bookDetailsContainer.innerHTML = '';
+
             // Aggiorna la pagina con i dettagli del libro e dell'autore
-            document.getElementById('bookDetails').innerHTML = `
+            bookDetailsContainer.innerHTML = `
                 <h3 class="text-center">ISBN: ${book.isbn}</h3>
                 <p><strong>Title:</strong> ${book.title}</p>
                 <p><strong>Author:</strong> ${author.name} ${author.surname}</p>
