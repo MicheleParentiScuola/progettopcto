@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<LibraryDbContext>(options =>
 {
-    options.UseSqlServer("Server=localhost\\MSSQLSERVER07;Database=bookcase;Integrated Security=True;TrustServerCertificate=True");
+    options.UseSqlServer("Server=localhost;Database=bookcase;Integrated Security=True;TrustServerCertificate=True");
 });
 builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
    .AddNegotiate();

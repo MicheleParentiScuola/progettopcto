@@ -128,9 +128,33 @@
             background-color: white;
             border: 1px solid #ddd;
             padding: 8px; /* Dimensione leggermente diminuita */
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+            
+                label[for="genreFilter"] {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #333;
+                    margin-right: 10px;
+                }
+
+                select#genreFilter {
+                    padding: 10px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    background-color: #f9f9f9;
+                    color: #333;
+                }
+
+                select#genreFilter option {
+                    padding: 10px;
+                    font-size: 16px;
+                    background-color: #fff;
+                    color: #333;
+                }
+            
+            
+        
     </style>
 </head>
 <body>
@@ -152,12 +176,12 @@
                     <option value="">All</option>
                     <option value="Fantasy">Fantasy</option>
                     <option value="Thriller">Thriller</option>
-                    <option value="Storico">Storico</option>
-                    <option value="Classico">Classico</option>
-                    <option value="Distopico">Distopico</option>
-                    <option value="Fiaba">Fiaba</option>
-                    <option value="Avventura">Avventura</option>
-                    <option value="Romantico">Romantico</option>
+                    <option value="Storico">Historical</option>
+                    <option value="Classico">Classic</option>
+                    <option value="Distopico">Dystopian</option>
+                    <option value="Fiaba">Fairy tale</option>
+                    <option value="Avventura">Adventure</option>
+                    <option value="Romantico">Romantic</option>
                 </select>
 
             </div>
@@ -179,7 +203,7 @@
             </table>
 
             <div class="loaned-books">
-                <h3>Your borrowed books</h3>
+                <h3>Your borrowed books:</h3>
                 <table class="table">
                     <thead>
                         <tr>
